@@ -1,0 +1,2251 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+input, textarea {
+    outline: none;
+}
+
+html, body {
+    font-family: 'Open Sans', Helvetica Neue, sans-serif;
+    display: table;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 0;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+.col {
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    -webkit-box-shadow: 0 40px 50px 0 #000000;
+    -webkit-box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0 40px 50px 0 #000000;
+    -moz-box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.9);
+    box-shadow: 0 40px 50px 0 #000000;
+    box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.9);
+}
+
+.to-top {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    background: #c61514;
+    padding: 15px;
+    opacity: .3;
+    transition: .3s;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+    .to-top:hover, .to-top:active, .to-top:focus {
+        color: #fff;
+        text-decoration: none;
+        opacity: 1;
+    }
+
+.glyphicon {
+    top: initial;
+}
+
+.smoke {
+    position: fixed;
+    z-index: 1100;
+    background: #18191d;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.hover-form, .hover-form-review {
+    position: fixed;
+    z-index: 1100;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    display: none;
+    overflow-y: overlay;
+}
+
+    .hover-form h3, .hover-form-review h3 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .hover-form .form-group, .hover-form-review .form-group {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+        .hover-form .form-group input[type=text], .hover-form-review .form-group input[type=text] {
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+        }
+
+        .hover-form .form-group input[type=text], .hover-form .form-group textarea, .hover-form-review .form-group input[type=text], .hover-form-review .form-group textarea {
+            border: 1px solid #c61514;
+            width: 100%;
+            resize: none;
+            color: #18191d;
+            padding: 6px;
+        }
+
+        .hover-form .form-group label, .hover-form-review .form-group label {
+            padding-top: 5px;
+            margin: 0;
+            font-weight: normal;
+            text-align: left;
+            display: block;
+        }
+
+        .hover-form .form-group .fio, .hover-form-review .form-group .fio {
+            margin-bottom: 15px;
+        }
+
+        .hover-form .form-group .phone, .hover-form-review .form-group .auto, .hover-form-review .form-group .auto-price, .hover-form-review .form-group .txt-review {
+            margin-bottom: 15px;
+        }
+
+        .hover-form .form-group .input-group, .hover-form-review .form-group .input-group {
+            margin-bottom: 15px;
+        }
+
+            .hover-form .form-group .input-group .form-control, .hover-form-review .form-group .input-group .form-control {
+                border-radius: 0;
+                color: #18191d;
+            }
+
+    .hover-form .podrobnee-btn, .hover-form-review .podrobnee-btn, .submit-review-btn {
+        text-align: center;
+    }
+
+.menu-xs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+    .menu-xs .burger {
+        position: absolute;
+        padding: 5px;
+        background-color: #fff;
+    }
+
+    .menu-xs .menu-line {
+        display: block;
+        width: 18px;
+        height: 3px;
+        background-color: #000;
+        margin-bottom: 3px;
+    }
+
+    .menu-xs ul {
+        display: none;
+        background: #fff;
+        text-align: center;
+    }
+
+        .menu-xs ul.opened {
+            display: block;
+        }
+
+        .menu-xs ul li {
+            padding: 10px 0;
+        }
+
+            .menu-xs ul li.active {
+                background-color: #8CD790;
+            }
+
+                .menu-xs ul li.active a {
+                    color: #fff;
+                }
+
+            .menu-xs ul li a {
+                text-decoration: none;
+                color: #c61514;
+                font-size: 10px;
+            }
+
+            .menu-xs ul li a:hover {
+                font-size: 11px;
+            }
+
+.left-side-bar {
+    background-color: #000;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    -webkit-box-shadow: 0 0 20px 0 #000000;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0 0 20px 0 #000000;
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 20px 0 #000000;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.45);
+    z-index: 100;
+}
+
+    .left-side-bar .left-side-top {
+		position: fixed;
+        background-color: #000;
+        padding: 1px 0 1px 0;
+    }
+
+    .left-side-bar .top-logo {
+        display: inline-block;
+		background: url('../img/logo.png') no-repeat center;
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+        background-color: #fff;
+        border: 5px solid #c61514;
+        border-radius: 50%;
+        margin: 20px 3px;
+    }
+
+    .left-side-bar .menu {
+        display: inline-block;
+        position: relative;
+        z-index: 101;
+        margin-top: 220px;
+        background-color: #000;
+    }
+
+        .left-side-bar .menu ul {
+            list-style: none;
+        }
+
+            .left-side-bar .menu ul li {
+                text-align: center;
+                padding: 10px 34px 10px 35px;
+                transition: .3s;
+                cursor: pointer;
+            }
+
+            .left-side-bar .menu ul a {
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 12px;
+                color: #fff;
+                transition: .3s;
+            }
+
+            .left-side-bar .menu ul li:hover {
+                color: gold;
+                font-size: 12px;
+            }
+
+                .left-side-bar .menu ul li:hover{
+                    color: gold;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
+
+            .left-side-bar .menu ul li:active {
+                font-size: 11px;
+}
+
+    .left-side-bar .left-side-contacts {
+        margin-top: 370px;
+        text-align: center;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+		border-top: 1px solid #fff;
+        padding-bottom: 12px;
+    }
+
+        .left-side-bar .left-side-contacts .phone {
+            font-size: 18px;
+        }
+
+        .left-side-bar .left-side-contacts .time {
+            font-size: 12px;
+        }
+
+        .left-side-bar .left-side-contacts .socials {
+            margin-top: 25px;
+        }
+
+.header-left {
+    width: 195px;
+    position: absolute;
+    top: 0;
+    left: -195px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    z-index: 100;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: -60px;
+    background-color: #000;
+}
+
+	.header-left.first-header {
+        margin-top: 1px;
+        border-top: none;
+    }
+
+.top-line {
+    height: 500px;
+    padding-top: 190px;
+    position: relative;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-img {
+    width: 100%;
+}
+
+    .slider-img.one {
+        background: url('../img/top-line-back1.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .slider-img.two {
+        background: url('../img/top-line-back2.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+    .slider-img.three {
+        background: url('../img/top-line-back3.jpg') no-repeat center;
+        background-size: cover;
+    }
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+    .carousel-inner > .item {
+        height: 100%;
+        width: 100%;
+    }
+
+        .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+            height: 100%;
+            width: 100%;
+        }
+
+.slogan-top-red {
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-color: #8CD790;
+    background-color: rgba(140, 215, 144, .8);
+}
+
+    .slogan-top-red .slogan {
+        padding-top: 30px;
+    }
+
+        .slogan-top-red .slogan h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .slogan-top-red .slogan p {
+            font-size: 12px;
+            font-weight: 400;
+            padding-top: 15px;
+            padding-bottom: 10px;
+        }
+
+.carousel-indicators {
+    bottom: initial;
+    top: 67%;
+}
+
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background-color: #285943;
+        opacity: .7;
+    }
+
+    .carousel-indicators .active {
+        width: 15px;
+        height: 15px;
+        margin: 5px;
+    }
+
+.circles li:hover {
+    opacity: 1;
+    background-color: #8CD790;
+}
+
+.circles .active {
+    background-color: #8CD790;
+    opacity: 1;
+}
+
+.top-buttons {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin: 110px 15px 0 15px;
+}
+
+    .top-buttons div {
+        text-align: center;
+        border: 2px solid #fff;
+        display: inline-block;
+        font-size: 12px;
+        padding: 10px 17px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .top-buttons .button-red {
+        background-color: #8CD790;
+        background-color: rgba(140, 215, 144, .7);
+        margin-right: 15px;
+    }
+
+        .top-buttons .button-red:hover {
+            background-color: #285943;
+        }
+
+    .top-buttons .button-transp {
+        background-color: #18191d;
+        background-color: rgba(24, 25, 29, .4);
+    }
+
+        .top-buttons .button-transp:hover {
+            background-color: #18191d;
+            background-color: rgba(24, 25, 29, 1);
+        }
+
+        .top-buttons .button-transp a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+.about-us, .our-scheme {
+    padding: 60px 0 60px 15px;
+    background: #fff;
+    position: relative;
+}
+
+.our-scheme, .our-deals {
+    padding: 0 0 60px 0;
+    background: #fff;
+    position: relative;
+}
+
+.prices, .our-contacts {
+    padding: 0 0 60px 0;
+    background: #fff;
+    position: relative;
+}
+
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 26px;
+        color: #18191d;
+        text-align: center;
+        margin: 0;
+        position: relative;
+        visibility: hidden;
+    }
+
+        .about-us h1::after {
+            content: '';
+            position: absolute;
+            bottom: -75%;
+            height: 100%;
+            background: url(../img/about-us-dl.png) no-repeat center;
+            width: 100%;
+            left: 0;
+        }
+
+        .our-scheme h1::after {
+            content: '';
+            position: absolute;
+            bottom: -75%;
+            height: 100%;
+            background: url(../img/our-scheme-dl.png) no-repeat center;
+            width: 100%;
+            left: 0;
+        }
+
+        .prices h1::after {
+            content: '';
+            position: absolute;
+            bottom: -75%;
+            height: 100%;
+            background: url(../img/prices-dl.png) no-repeat center;
+            width: 100%;
+            left: 0;
+        }
+
+        .our-deals h1::after {
+            content: '';
+            position: absolute;
+            bottom: -75%;
+            height: 100%;
+            background: url(../img/deals-dl.png) no-repeat center;
+            width: 100%;
+            left: 0;
+        }
+
+        .our-contacts h1::after {
+            content: '';
+            position: absolute;
+            bottom: -75%;
+            height: 100%;
+            background: url(../img/contacts-dl.png) no-repeat center;
+            width: 100%;
+            left: 0;
+        }
+
+.about-us .icons {
+    position: relative;
+    margin-top: 90px;
+}
+
+    .about-us .icons::before {
+        content: '';
+        position: absolute;
+        display: none;
+        top: -60%;
+        height: 100%;
+        background: url(../img/branch.png) no-repeat center;
+        width: 100%;
+        left: 0;
+        margin: 0 0 0 -9px;
+    }
+
+    .about-us .icons .icon {
+        border: 2px solid #18191d;
+        border-radius: 50%;
+        padding: 5px;
+        width: 190px;
+        height: 190px;
+        text-align: center;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .about-us .icons div {
+        text-align: center;
+        margin-bottom: 30px;
+        cursor: default;
+    }
+
+        .about-us .icons div p.hovered {
+            font-weight: bold;
+        }
+
+        .about-us .icons div h4 {
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .about-us .icons div .icon div {
+            transition: .3s;
+        }
+
+            .about-us .icons div .icon div::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                height: 171px;
+                background-color: #c61514;
+                opacity: .25;
+                width: 171px;
+                left: 0;
+                border-radius: 50%;
+                transition: .3s;
+            }
+
+            .about-us .icons div .icon div.hovered::after {
+                display: none;
+            }
+
+    .about-us .icons .icon div {
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        border: 2px solid #c61514;
+        position: relative;
+    }
+
+    .about-us .icons .icon p {
+        font-size: 14px;
+    }
+
+.first-circle-icon {
+    background: url(../img/clock.svg) no-repeat center;
+    margin: 0;
+}
+
+.second-circle-icon {
+    background: url(../img/builder.svg) no-repeat center;
+    margin: 0;
+}
+
+.third-circle-icon {
+    background: url(../img/money.svg) no-repeat center;
+    margin: 0;
+}
+
+.fourth-circle-icon {
+    background: url(../img/confident.svg) no-repeat center;
+    margin: 0;
+}
+
+.our-scheme .icons {
+    margin-top: 75px;
+    padding: 0 15px;
+}
+
+    .our-scheme .icons h2 {
+        font-weight: bold;
+        font-size: 80px;
+        margin: 0;
+    }
+
+    .our-scheme .icons div {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+        .our-scheme .icons div.first, .our-scheme .icons div.second, .our-scheme .icons div.third {
+            visibility: hidden;
+        }
+
+    .our-scheme .icons p {
+        font-size: 18px;
+    }
+
+    .our-scheme .icons .icon {
+        margin: 0;
+        width: 170px;
+        height: 170px;
+    }
+
+    .our-scheme .icons .first .icon {
+        background: url(../img/plan.svg) no-repeat center;
+    }
+
+    .our-scheme .icons .second .icon {
+        background: url(../img/buying.svg) no-repeat center;
+    }
+
+    .our-scheme .icons .third .icon {
+        background: url(../img/house.svg) no-repeat center;
+    }
+
+.our-scheme .slogan-schema-red {
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    color: #fff;
+    background-color: #c61514;
+    margin-top: 15px;
+}
+
+    .our-scheme .slogan-schema-red p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+
+    .our-scheme .slogan-schema-red h1 {
+        color: #fff;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: none;
+    }
+
+        .our-scheme .slogan-schema-red h1::after {
+            content: none;
+        }
+
+    .our-scheme .slogan-schema-red .zayavka-slogan-btn {
+        background-color: #c61514;
+        border: 2px solid #fff;
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 16px;
+        margin-top: 40px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+        .our-scheme .slogan-schema-red .zayavka-slogan-btn:hover {
+            -webkit-box-shadow: 0 0 25px 0 #fff;
+            -webkit-box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.75);
+            -moz-box-shadow: 0 0 25px 0 #fff;
+            -moz-box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.75);
+            box-shadow: 0 0 25px 0 #fff;
+            box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.75);
+        }
+
+.car-clipart {
+    background: url('../img/car-back.jpg') no-repeat center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+    .car-clipart::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        opacity: .8;
+    }
+
+    .car-clipart .car {
+        background: url('../img/car-blank.png') no-repeat center;
+        background-size: cover;
+        width: 710px;
+        height: 410px;
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        margin-top: -205px;
+        left: 50%;
+        margin-left: -355px;
+    }
+
+        .car-clipart .car.paint {
+            background: url('../img/car-paint.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .car-clipart .car.engine {
+            background: url('../img/car-engine.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .car-clipart .car.rzha {
+            background: url('../img/car-rzha.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .car-clipart .car.transm {
+            background: url('../img/car-transm.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .car-clipart .car.kuzov {
+            background: url('../img/car-kuzov.png') no-repeat center;
+            background-size: cover;
+        }
+
+        .car-clipart .car div {
+            border: #c61514 solid 5px;
+            text-transform: uppercase;
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+            .car-clipart .car div div {
+                border: none;
+                width: 150px;
+                height: 150px;
+                display: table-cell;
+                position: relative;
+                padding: 2px 5px;
+                font-weight: bold;
+            }
+
+        .car-clipart .car .paint {
+            top: -32%;
+            left: -15%;
+        }
+
+            .car-clipart .car .paint div {
+                vertical-align: bottom;
+            }
+
+        .car-clipart .car .kuzov {
+            top: -20%;
+            left: 19%;
+        }
+
+            .car-clipart .car .kuzov div {
+                vertical-align: bottom;
+                text-align: right;
+            }
+
+        .car-clipart .car .engine {
+            top: -26%;
+            right: -2%;
+        }
+
+            .car-clipart .car .engine div {
+                vertical-align: top;
+                text-align: right;
+            }
+
+        .car-clipart .car .rzha {
+            bottom: -32%;
+            left: 5%;
+        }
+
+            .car-clipart .car .rzha div {
+                vertical-align: top;
+            }
+
+        .car-clipart .car .transm {
+            bottom: -23%;
+            right: 13%;
+        }
+
+            .car-clipart .car .transm div {
+                vertical-align: bottom;
+            }
+
+.prices .uslugi {
+    margin-top: 75px;
+    border-right: 5px solid #c61514;
+}
+
+    .prices .uslugi div {
+        font-size: 14px;
+        border-left: 5px solid #c61514;
+        padding-left: 15px;
+        margin-bottom: 35px;
+    }
+
+        .prices .uslugi div:last-child {
+            margin-bottom: 0;
+        }
+
+.prices .price {
+    margin-top: 75px;
+    text-align: center;
+    position: relative;
+}
+
+    .prices .price h3 {
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .prices .price .price-descr {
+        position: relative;
+        margin-bottom: 30px;
+        padding-left: 10px;
+    }
+
+        .prices .price .price-descr div {
+            text-decoration: underline;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .prices .price .price-descr::after {
+            content: '';
+            position: absolute;
+            bottom: -89px;
+            height: 69px;
+            width: 10px;
+            left: 50%;
+            background: url(../img/red-vertical.png) no-repeat center;
+        }
+
+    .prices .price .descriptions {
+        margin-top: 55px;
+    }
+
+        .prices .price .descriptions div {
+            font-size: 10px;
+        }
+
+        .prices .price .descriptions h4 {
+            font-weight: bold;
+            color: #c61514;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+    .prices .price .red-border {
+        border-left: 5px solid #c61514;
+        margin-top: 30px;
+        padding: 30px 25px 30px 0;
+    }
+
+    .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn, .hover-form .podrobnee-btn, .review-btn, .submit-review-btn {
+        font-size: 24px;
+        border: 2px solid #c61514;
+        padding: 20px 10px;
+        margin-top: 30px;
+        transition: .3s;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+.our-contacts .podrobnee-btn, .hover-form .podrobnee-btn, .review-btn, .submit-review-btn {
+    margin-top: 30px;
+}
+
+    .prices .price .podrobnee-btn:hover, .our-contacts .podrobnee-btn:hover, .hover-form .podrobnee-btn:hover, .review-btn:hover, .submit-review-btn:hover {
+        background-color: #c61514;
+        color: #fff;
+    }
+
+.our-deals .deals {
+    margin-top: 75px;
+}
+
+    .our-deals .deals .deal {
+        height: 160px;
+        position: relative;
+    }
+
+        .our-deals .deals .deal.one .auto-pic, .our-deals .deals .deal.two .auto-pic, .our-deals .deals .deal.three .auto-pic, .our-deals .deals .deal.four .auto-pic, .our-deals .deals .deal.five .auto-pic, .our-deals .deals .deal.six .auto-pic {
+            height: 250px;
+            margin-bottom: 15px;
+        }
+
+        .our-deals .deals .deal.one, .our-deals .deals .deal.one .auto-pic {
+            background: url('../img/mazda6.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .our-deals .deals .deal.two, .our-deals .deals .deal.two .auto-pic {
+            background: url('../img/peugeot207.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .our-deals .deals .deal.three, .our-deals .deals .deal.three .auto-pic {
+            background: url('../img/lancer9.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .our-deals .deals .deal.four, .our-deals .deals .deal.four .auto-pic {
+            background: url('../img/audia4.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .our-deals .deals .deal.five, .our-deals .deals .deal.five .auto-pic {
+            background: url('../img/bmw6.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .our-deals .deals .deal.six, .our-deals .deals .deal.six .auto-pic {
+            background: url('../img/nissanq.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        .our-deals .deals .deal::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            background-color: #18191d;
+            opacity: .6;
+        }
+
+        .our-deals .deals .deal div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+
+            .our-deals .deals .deal div .name {
+                color: #fff;
+                z-index: 100;
+                font-size: 12px;
+                text-align: center;
+                width: 100%;
+                margin-top: 30px;
+                font-weight: normal;
+            }
+
+            .our-deals .deals .deal div .car-model {
+                color: #fff;
+                z-index: 100;
+                font-size: 12px;
+                text-align: center;
+                width: 100%;
+                margin-top: 50px;
+            }
+
+            .our-deals .deals .deal div .car-price {
+                color: #fff;
+                z-index: 100;
+                font-size: 10px;
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+                margin-top: 70px;
+            }
+
+            .our-deals .deals .deal div .btn-more {
+                color: #fff;
+                z-index: 100;
+                text-align: center;
+                font-size: 10px;
+                border: 2px solid #fff;
+                background-color: #c61514;
+                background-color: rgba(198, 21, 20, .4);
+                transition: .3s;
+                margin-top: 95px;
+                padding: 8px 10px;
+                width: initial;
+                height: initial;
+                margin-left: 21%;
+                cursor: pointer;
+            }
+
+            .our-deals .deals .deal div .car-review {
+                color: #fff;
+                z-index: 100;
+                text-align: center;
+                width: 100%;
+                margin-top: 138px;
+                font-size: 9px;
+                transition: .3s;
+                cursor: pointer;
+            }
+
+        .our-deals .deals .deal .deal-more, .our-deals .deals .deal .review {
+            position: fixed;
+            z-index: 1101;
+            background: #fff;
+            text-align: left;
+            padding: 10px 15px;
+            overflow-y: overlay;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            display: none;
+        }
+
+            .our-deals .deals .deal .deal-more .close, .our-deals .deals .deal .review .close {
+                background-color: #fff;
+            }
+
+            .our-deals .deals .deal .review h4, .our-deals .deals .deal .review h5, .our-deals .deals .deal .deal-more h4 {
+                font-weight: bold;
+                margin: 0;
+            }
+
+                .our-deals .deals .deal .review h5, .our-deals .deals .deal .deal-more h4.price-h4 {
+                    margin-bottom: 15px;
+                }
+
+            .our-deals .deals .deal .review div, .our-deals .deals .deal .deal-more div {
+                position: relative;
+                text-align: left;
+            }
+
+.our-deals .review-btn {
+    text-align: center;
+}
+
+.our-contacts .contacts {
+    border-right: 5px solid #c61514;
+    margin-top: 90px;
+}
+
+    .our-contacts .contacts div {
+        border-left: 5px solid #c61514;
+        padding-left: 15px;
+        margin-bottom: 35px;
+    }
+
+        .our-contacts .contacts div:last-child {
+            margin-bottom: 0;
+        }
+
+.our-contacts .contact-form {
+    text-align: center;
+    margin-top: 75px;
+}
+
+    .our-contacts .contact-form .red-border {
+        border-left: 5px solid #c61514;
+        padding: 0 25px 0 15px;
+    }
+
+    .our-contacts .contact-form h3 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .our-contacts .contact-form .form-group {
+        margin-top: 45px;
+        margin-bottom: 0;
+    }
+
+        .our-contacts .contact-form .form-group input[type=text] {
+            height: 34px;
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        .our-contacts .contact-form .form-group input[type=text], .our-contacts .contact-form .form-group textarea {
+            border: 1px solid #c61514;
+            width: 100%;
+            resize: none;
+            color: #18191d;
+            padding: 6px;
+        }
+
+        .our-contacts .contact-form .form-group label {
+            padding-top: 5px;
+            margin: 0;
+            font-weight: normal;
+            text-align: left;
+            display: block;
+        }
+
+        .our-contacts .contact-form .form-group .fio {
+            margin-bottom: 15px;
+        }
+
+        .our-contacts .contact-form .form-group .phone {
+            margin-bottom: 15px;
+        }
+
+        .our-contacts .contact-form .form-group .input-group {
+            margin-bottom: 15px;
+        }
+
+            .our-contacts .contact-form .form-group .input-group .form-control {
+                border-radius: 0;
+                color: #18191d;
+            }
+
+        .our-contacts .contact-form .form-group label.message {
+            opacity: 0;
+            color: #c61514;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+.hover-form .form-group label.message, .hover-form-review .form-group label.message {
+    opacity: 0;
+    color: #c61514;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-group.date .input-group-addon {
+    background: #c61514;
+    border: none;
+    border-radius: 0;
+}
+
+    .input-group.date .input-group-addon .glyphicon {
+        color: #ffffff;
+    }
+
+.footer {
+    background: #fff;
+    padding: 15px 15px 30px 15px;
+    border-top: 1px solid #c61514;
+}
+
+    .footer .left-footer {
+        margin-top: 0;
+    }
+
+        .footer .left-footer .footer-phone, .footer .right-footer .footer-socials {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .footer .left-footer .footer-email, .footer .right-footer .footer-rights {
+            font-size: 8px;
+        }
+
+    .footer a {
+        font-size: 10px;
+        color: #18191d;
+        text-decoration: underline;
+    }
+
+.vk, .utube {
+    width: 18px;
+    height: 18px;
+    margin-left: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.vk {
+    background: url('../img/vk.png') no-repeat center;
+    background-size: cover;
+}
+
+.utube {
+    background: url('../img/utube.png') no-repeat center;
+    background-size: cover;
+    margin-left: 5px;
+}
+@media(min-width: 360px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 24%;
+    }
+
+    .carousel-indicators {
+        top: 60%;
+    }
+
+    .top-buttons {
+        margin: 145px 15px 0 15px;
+    }
+
+    .vk, .utube {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media(min-width: 375px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 25%;
+    }
+
+    .footer .left-footer .footer-phone, .footer .right-footer .footer-socials {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 411px) {
+    .vk, .utube {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media(min-width: 414px) {
+
+    .our-scheme .slogan-schema-red .zayavka-slogan-btn {
+        margin-top: 60px;
+    }
+
+    .prices .price .price-descr div {
+        font-size: 18px;
+    }
+
+    .prices .price .descriptions div {
+        font-size: 12px;
+    }
+
+    .prices .price .descriptions h4 {
+        font-size: 16px;
+    }
+
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+        font-size: 32px;
+    }
+
+    .our-deals .deals .deal {
+        height: 207px;
+    }
+
+        .our-deals .deals .deal div .name {
+            font-size: 12px;
+        }
+
+        .our-deals .deals .deal div .car-model {
+            font-size: 12px;
+            margin-top: 60px;
+        }
+
+        .our-deals .deals .deal div .car-price {
+            font-size: 12px;
+            margin-top: 80px;
+        }
+
+        .our-deals .deals .deal div .btn-more {
+            margin-top: 120px;
+            padding: 12px 16px;
+            margin-left: 24%;
+        }
+
+        .our-deals .deals .deal div .car-review {
+            margin-top: 175px;
+            font-size: 10px;
+        }
+
+    .footer .left-footer .footer-phone, .footer .right-footer .footer-socials {
+        font-size: 12px;
+    }
+
+    .footer .left-footer {
+        margin-top: 6px;
+    }
+
+    .vk, .utube {
+        margin-left: 6px;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media(min-width: 435px) {
+    .vk, .utube {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(min-width: 480px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 27%;
+    }
+}
+
+@media(min-width: 533px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 30%;
+    }
+
+    .our-deals .deals .deal.one .auto-pic, .our-deals .deals .deal.two .auto-pic, .our-deals .deals .deal.three .auto-pic, .our-deals .deals .deal.four .auto-pic, .our-deals .deals .deal.five .auto-pic, .our-deals .deals .deal.six .auto-pic {
+        height: 400px;
+    }
+}
+
+@media(min-width: 568px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 31%;
+    }
+}
+
+@media(min-height: 600px) and (min-width: 600px) {
+    .hover-form, .hover-form-review {
+        width: 500px;
+        height: 600px;
+        top: 50%;
+        left: 50%;
+        margin-top: -280px;
+        margin-left: -250px;
+    }
+
+    .hover-form-review {
+        height: 620px;
+    }
+
+    .our-deals .deals .deal .deal-more, .our-deals .deals .deal .review {
+        width: 600px;
+        max-height: 600px;
+        height: initial;
+        top: 50%;
+        left: 50%;
+        margin-top: -300px;
+        margin-left: -300px;
+    }
+}
+
+@media(min-width: 640px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 33%;
+    }
+}
+
+@media(min-width: 667px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 34%;
+    }
+}
+
+@media(min-width: 736px) {
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 35%;
+    }
+}
+
+@media(min-width: 768px) and (orientation: portrait) {
+    .left-side-bar .left-side-contacts {
+        margin-top: 58px;
+    }
+	.left-side-bar {
+        width: 129px;
+    }
+}
+
+@media(min-width: 768px) and (orientation: landscape) {
+    .left-side-bar .left-side-contacts {
+        margin-top: 58px;
+    }
+    .left-side-bar {
+        width: 129px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .slogan-top-red .slogan {
+        padding-top: 45px;
+    }
+    
+        .slogan-top-red .slogan h1 {
+            font-size: 34px;
+        }
+
+        .slogan-top-red .slogan p {
+            font-size: 16px;
+        }
+
+    .top-line {
+        padding-top: 230px;
+    }
+
+    .top-buttons {
+        text-align: right;
+        margin-top: 175px;
+    }
+
+    .socials .utube {
+        margin-left: 10px;
+    }
+
+    .top-buttons div {
+        font-size: 12px;
+    }
+
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+        font-size: 28px;
+    }
+
+    .about-us .icons {
+        margin-top: 75px;
+    }
+
+    .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
+                    color: gold;
+                    font-size: 11px;
+                    text-decoration: none;
+                }
+        .about-us .icons .second, .about-us .icons .third, .about-us .icons .fourth {
+            margin-left: 10px;
+        }
+
+        .about-us .icons::before {
+            display: none;
+        }
+
+        .about-us .icons div {
+            width: 140px;
+        }
+
+        .about-us .icons .icon {
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+        }
+
+            .about-us .icons .icon div {
+                height: 90px;
+                width: 90px;
+            }
+
+        .about-us .icons div .icon div::after {
+            content: '';
+            position: absolute;
+            width: 86px;
+            height: 86px;
+        }
+
+    .first-circle-icon, .second-circle-icon, .third-circle-icon, .fourth-circle-icon {
+        background-size: cover;
+    }
+
+    .about-us .icons div h4 {
+        font-size: 14px;
+    }
+
+    .about-us .icons div p {
+        font-size: 10px;
+    }
+
+    .our-scheme .icons {
+        display: -webkit-box;
+    }
+
+        .our-scheme .icons div {
+            margin: 0;
+        }
+
+        .our-scheme .icons h2 {
+            font-size: 60px;
+        }
+
+        .our-scheme .icons .icon {
+            width: 110px;
+            height: 110px;
+            margin-top: 30px;
+        }
+
+        .our-scheme .icons .first .icon, .our-scheme .icons .second .icon, .our-scheme .icons .third .icon {
+            background-size: contain;
+        }
+
+        .our-scheme .icons p {
+            font-size: 14px;
+            margin-top: 25px;
+        }
+
+        .our-scheme .icons .first::after, .our-scheme .icons .second::after {
+            position: absolute;
+            content: '';
+            width: 40px;
+            height: 10px;
+            top: 50%;
+            left: 90%;
+            background: url(../img/red-divider.png) no-repeat center;
+        }
+
+    .left-side-bar .menu ul li {
+        padding: 10px 15px;
+    }
+    
+
+    .left-side-bar .menu ul a {
+        font-size: 10px;
+    }
+    
+    .left-side-bar .top-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .left-side-bar .left-side-contacts .phone {
+        font-size: 12px;
+    }
+
+    .left-side-bar .left-side-contacts .time {
+        font-size: 8px;
+    }
+
+    .utube {
+        margin-left: 10px;
+    }
+
+    .vk, .utube {
+        width: 20px;
+        height: 20px;
+        margin-left: 0;
+    }
+
+    .top-line {
+        height: 654px;
+    }
+
+    .header-left {
+        width: 125px;
+        left: -125px;
+        font-size: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+       
+
+    .our-scheme .slogan-schema-red p {
+        font-size: 15px;
+    }
+
+    .our-scheme .slogan-schema-red h1 {
+        font-size: 28px;
+    }
+
+    .our-scheme .slogan-schema-red .zayavka-slogan-btn {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .our-scheme .slogan-schema-red {
+        height: 240px;
+    }
+
+    .car-clipart {
+        height: 500px;
+    }
+
+        .car-clipart .car {
+            width: 470px;
+            height: 268px;
+            margin-left: -235px;
+            margin-top: -134px;
+        }
+
+            .car-clipart .car div {
+                width: 100px;
+                height: 100px;
+            }
+
+                .car-clipart .car div div {
+                    width: 90px;
+                    height: 90px;
+                    font-size: 9px;
+                }
+
+    .prices, .our-contacts {
+        padding: 0 0 60px 15px;
+    }
+
+        .prices .uslugi div {
+            font-size: 10px;
+        }
+
+        .prices .price h3 {
+            font-size: 16px;
+        }
+
+        .prices .price .red-border {
+            margin-left: 5px;
+            margin-top: 95px;
+        }
+
+        .prices .price .price-descr {
+            padding-left: 0;
+        }
+
+            .prices .price .price-descr div {
+                margin-bottom: 30px;
+                font-size: 13px;
+            }
+
+        .prices .price .descriptions {
+            margin-top: 75px;
+        }
+
+            .prices .price .descriptions div {
+                font-size: 12px;
+            }
+
+            .prices .price .descriptions h4 {
+                font-size: 16px;
+                margin-top: 15px;
+            }
+
+        .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn {
+            font-size: 14px;
+            margin-top: 46px;
+        }
+
+    .our-deals .deals .deal div .btn-more {
+        margin-left: 32%;
+    }
+
+    .our-contacts .contacts {
+        font-size: 12px;
+        margin-top: 200px;
+        padding-top: 35px;
+    }
+
+        .our-contacts .contacts div:last-child {
+            margin-bottom: 35px;
+        }
+
+    .our-contacts .contact-form h3 {
+        font-size: 14px;
+    }
+
+    .our-contacts .contact-form .red-border {
+        margin-left: 5px;
+    }
+
+    .our-contacts .contact-form .form-group .fio {
+        padding-right: 0;
+    }
+
+    .our-contacts .contact-form .form-group .phone {
+        padding-left: 0;
+    }
+
+    .footer .left-footer .footer-phone, .footer .right-footer .footer-socials {
+        font-size: 12px;
+    }
+
+    .footer .left-footer .footer-email, .footer .right-footer .footer-rights {
+        font-size: 8px;
+    }
+
+    .footer a {
+        font-size: 10px;
+    }
+
+    .footer-socials .vk, .footer-socials .utube {
+        margin-left: 8px;
+    }
+}
+
+@media (min-width: 992px) and (orientation: portrait) {
+    .left-side-bar .left-side-contacts {
+        margin-top: 97px;
+    }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+    .left-side-bar .left-side-contacts {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .left-side-bar .top-logo {
+        width: 150px;
+        height: 150px;
+		margin-left: 8px;
+    }
+    .left-side-bar {
+        width: 166px;
+    }
+    .left-side-bar .menu {
+        font-size: 11px;
+        width: 166px;
+    }
+
+    .slogan-top-red .slogan {
+        padding-top: 60px;
+    }
+
+        .slogan-top-red .slogan h1 {
+            font-size: 44px;
+        }
+
+        .slogan-top-red .slogan p {
+            font-size: 18px;
+        }
+
+    .top-buttons div {
+        font-size: 14px;
+    }
+
+    .top-line {
+        height: 670px;
+    }
+
+    .left-side-bar .left-side-contacts .phone {
+        font-size: 14px;
+    }
+
+    .left-side-bar .menu ul li {
+        padding: 10px 17px 10px 16px;
+        height: 45px;
+    }
+
+    .left-side-bar .menu ul a {
+        font-size: 11px;
+    }
+    
+    .left-side-bar .menu ul a:hover {
+        font-size: 12px;
+    }
+    
+
+    .header-left {
+        width: 162px;
+        left: -162px;
+        font-size: 12px;
+    }
+
+       
+
+    .utube {
+        margin-left: 10px;
+    }
+
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+        font-size: 30px;
+    }
+
+    .about-us .icons div {
+        width: 180px;
+    }
+
+    .about-us .icons .icon {
+        width: 140px;
+        height: 140px;
+    }
+
+        .about-us .icons .icon div {
+            height: 130px;
+            width: 130px;
+        }
+
+    .about-us .icons div .icon div::after {
+        width: 126px;
+        height: 126px;
+    }
+
+    .about-us .icons div h4 {
+        font-size: 16px;
+    }
+
+    .about-us .icons div p {
+        font-size: 12px;
+    }
+
+    .our-scheme .slogan-schema-red {
+        height: 270px;
+    }
+
+        .our-scheme .slogan-schema-red p {
+            font-size: 20px;
+        }
+
+        .our-scheme .slogan-schema-red h1 {
+            font-size: 38px;
+        }
+
+        .our-scheme .slogan-schema-red .zayavka-slogan-btn {
+            font-size: 20px;
+        }
+
+    .car-clipart {
+        height: 570px;
+    }
+
+        .car-clipart .car {
+            width: 550px;
+            height: 320px;
+            margin-left: -275px;
+            margin-top: -160px;
+        }
+
+            .car-clipart .car div {
+                width: 120px;
+                height: 120px;
+            }
+
+                .car-clipart .car div div {
+                    width: 110px;
+                    height: 110px;
+                    font-size: 11px;
+                }
+
+    .prices .uslugi div {
+        font-size: 12px;
+    }
+
+    .prices .price h3 {
+        font-size: 20px;
+    }
+
+    .prices .price .price-descr div {
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+
+    .prices .price .descriptions div {
+        font-size: 14px;
+    }
+
+    .prices .price .descriptions h4 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn {
+        font-size: 18px;
+        margin-top: 65px;
+    }
+
+    .our-contacts .contacts {
+        font-size: 13px;
+    }
+
+    .our-contacts .contact-form h3 {
+        font-size: 16px;
+    }
+
+    .our-contacts .contacts {
+        margin-top: 265px;
+    }
+
+    .footer .left-footer .footer-phone, .footer .right-footer .footer-socials {
+        font-size: 14px;
+    }
+
+    .footer .left-footer .footer-email, .footer .right-footer .footer-rights {
+        font-size: 10px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+
+    .our-deals .deals .deal {
+        height: 270px;
+    }
+
+        .our-deals .deals .deal div .name {
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        .our-deals .deals .deal div .car-model {
+            margin-top: 85px;
+            font-size: 14px;
+        }
+
+        .our-deals .deals .deal div .car-price {
+            margin-top: 110px;
+            font-size: 16px;
+        }
+
+        .our-deals .deals .deal div .btn-more {
+            margin-top: 180px;
+            font-size: 12px;
+            margin-left: 28%;
+        }
+
+        .our-deals .deals .deal div .car-review {
+            margin-top: 235px;
+            font-size: 12px;
+        }
+}
+
+@media (min-width: 1200px) {
+    .left-side-bar .top-logo {
+        width: 180px;
+        height: 180px;
+		margin-left: 8px;
+    }
+    .left-side-bar {
+        width: 200px;
+    }
+    .left-side-bar .menu {
+        width: 200px;
+    }
+    
+    .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
+        font-size: 13px;
+    }
+    
+    .left-side-bar .menu ul li {
+        padding: 10px 34px ;
+    }
+
+    .left-side-bar .left-side-contacts {
+        margin-top: 89px;
+    }
+
+        .left-side-bar .left-side-contacts .phone {
+            font-size: 18px;
+        }
+
+        .left-side-bar .left-side-contacts .time {
+            font-size: 12px;
+        }
+
+    .vk, .utube {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-left {
+        width: 195px;
+        left: -195px;
+        font-size: 14px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-top: -60px;
+    }
+
+      
+
+    .top-line {
+        height: 700px;
+    }
+
+    .slogan-top-red .slogan h1 {
+        font-size: 54px;
+    }
+
+    .slogan-top-red .slogan p {
+        font-size: 24px;
+    }
+
+    .top-buttons div {
+        font-size: 16px;
+    }
+
+    .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
+        font-size: 32px;
+    }
+
+    .about-us .icons {
+        margin-top: 135px;
+    }
+
+        .about-us .icons::before {
+            display: block;
+        }
+
+        .about-us .icons div {
+            width: 200px;
+            text-align: center;
+        }
+
+        .about-us .icons .icon {
+            width: 190px;
+            height: 190px;
+            padding: 5px;
+        }
+
+            .about-us .icons .icon div {
+                height: 175px;
+                width: 175px;
+            }
+
+        .about-us .icons div .icon div::after {
+            height: 171px;
+            width: 171px;
+        }
+
+        .about-us .icons .second {
+            margin-left: 63px;
+        }
+
+        .about-us .icons .third {
+            margin-left: 22px;
+        }
+
+        .about-us .icons .fourth {
+            margin-left: 63px;
+        }
+
+        .about-us .icons div h4 {
+            font-size: 18px;
+        }
+
+        .about-us .icons div p {
+            font-size: 14px;
+        }
+
+    .our-scheme .icons h2 {
+        font-size: 80px;
+    }
+
+    .our-scheme .icons .icon {
+        width: 170px;
+        height: 170px;
+    }
+
+    .our-scheme .icons .first::after, .our-scheme .icons .second::after {
+        width: 123px;
+        left: 82%;
+    }
+
+    .our-scheme .icons p {
+        font-size: 18px;
+    }
+
+    .our-scheme .slogan-schema-red {
+        height: 330px;
+    }
+
+        .our-scheme .slogan-schema-red p {
+            font-size: 24px;
+        }
+
+        .our-scheme .slogan-schema-red h1 {
+            font-size: 44px;
+        }
+
+        .our-scheme .slogan-schema-red .zayavka-slogan-btn {
+            font-size: 24px;
+            margin-top: 60px;
+        }
+
+    .car-clipart {
+        height: 800px;
+    }
+
+        .car-clipart .car {
+            width: 710px;
+            height: 410px;
+            margin-top: -205px;
+            margin-left: -355px;
+        }
+
+            .car-clipart .car div {
+                width: 160px;
+                height: 160px;
+            }
+
+                .car-clipart .car div div {
+                    width: 150px;
+                    height: 150px;
+                    font-size: 14px;
+                }
+
+    .prices .uslugi div {
+        font-size: 14px;
+    }
+
+    .prices .price .red-border {
+        margin-left: 10px;
+        margin-top: 120px;
+    }
+
+    .prices .price h3 {
+        font-size: 24px;
+    }
+
+    .prices .price .price-descr div {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .prices .price .descriptions {
+        margin-top: 55px;
+    }
+
+        .prices .price .descriptions div {
+            font-size: 18px;
+        }
+
+        .prices .price .descriptions h4 {
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+    .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn {
+        font-size: 24px;
+        margin-top: 65px;
+    }
+
+    .our-deals .deals .deal {
+        height: 325px;
+    }
+
+        .our-deals .deals .deal div .name {
+            font-size: 24px;
+            margin-top: 60px;
+        }
+
+        .our-deals .deals .deal div .car-model {
+            font-size: 18px;
+            margin-top: 105px;
+        }
+
+        .our-deals .deals .deal div .car-price {
+            font-size: 18px;
+            margin-top: 130px;
+        }
+
+        .our-deals .deals .deal div .btn-more {
+            font-size: 14px;
+            margin-top: 220px;
+            margin-left: 29%;
+        }
+
+        .our-deals .deals .deal div .car-review {
+            font-size: 14px;
+            margin-top: 275px;
+        }
+
+    .our-contacts .contacts {
+        font-size: 14px;
+        margin-top: 200px;
+    }
+
+    .our-contacts .contact-form .red-border {
+        margin-left: 10px;
+    }
+
+    .our-contacts .contact-form h3 {
+        font-size: 18px;
+    }
+
+    .our-contacts .contact-form .form-group .fio {
+        padding-right: 5px;
+    }
+
+    .our-contacts .contact-form .form-group .phone {
+        padding-left: 5px;
+    }
+
+    .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn {
+        font-size: 24px;
+        margin-top: 65px;
+    }
+
+    .footer .left-footer .footer-phone, .footer .right-footer .footer-socials {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .footer .left-footer .footer-email, .footer .right-footer .footer-rights {
+        font-size: 12px;
+    }
+
+    .footer a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .left-side-bar .menu ul li {
+        padding: 10px 34px 10px 35px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .left-side-bar .menu ul li {
+        padding: 10px 33px;
+    }
+}
