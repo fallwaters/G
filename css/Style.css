@@ -20,6 +20,7 @@ html, body {
 .container {
     padding: 0;
     margin: 0 auto;
+    width: 83%;
     z-index: 1000;
 }
 
@@ -29,12 +30,12 @@ html, body {
 
 .wrapper {
     position: relative;
-    -webkit-box-shadow: 0 40px 50px 0 #000000;
-    -webkit-box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.9);
-    -moz-box-shadow: 0 40px 50px 0 #000000;
-    -moz-box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.9);
-    box-shadow: 0 40px 50px 0 #000000;
-    box-shadow: 0 40px 50px 0 rgba(0, 0, 0, 0.9);
+    -webkit-box-shadow: 0 2px 2px 0 #000000;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0 2px 2px 0 #000000;
+    -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 2px 0 #000000;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.9);
 }
 
 .to-top {
@@ -196,7 +197,7 @@ html, body {
             }
 
 .left-side-bar {
-    background-color: #fff;
+    background-color: #70C1B3;
     height: 100%;
     width: 200px;
     position: fixed;
@@ -212,7 +213,7 @@ html, body {
 
     .left-side-bar .left-side-top {
 		position: fixed;
-        background-color: #fff;
+        background-color: #70C1B3;
         padding: 1px 0 1px 0;
     }
 
@@ -222,8 +223,8 @@ html, body {
         background-size: cover;
         width: 120px;
         height: 120px;
-        background-color: #fff;
-        border: 5px solid #8BC34A;
+        background-color: #70C1B3;
+        border: 5px solid white;
         border-radius: 50%;
         margin: 20px 3px;
     }
@@ -233,7 +234,7 @@ html, body {
         position: relative;
         z-index: 101;
         margin-top: 220px;
-        background-color: #fff;
+        background-color: #70C1B3;
     }
 
         .left-side-bar .menu ul {
@@ -256,12 +257,12 @@ html, body {
             }
 
             .left-side-bar .menu ul li:hover {
-                color: gold;
+                color: #FFE066;
                 font-size: 12px;
             }
 
                 .left-side-bar .menu ul li:hover{
-                    color: gold;
+                    color: #FFE066;
                     font-size: 12px;
                     text-decoration: none;
                 }
@@ -333,17 +334,17 @@ html, body {
 }
 
     .slider-img.one {
-        background: url('../img/top-line-back1.jpg') no-repeat center;
+        background: url('../img/1.jpg') no-repeat center;
         background-size: cover;
     }
 
     .slider-img.two {
-        background: url('../img/top-line-back2.jpg') no-repeat center;
+        background: url('../img/2.jpg') no-repeat center;
         background-size: cover;
     }
 
     .slider-img.three {
-        background: url('../img/top-line-back3.jpg') no-repeat center;
+        background: url('../img/3.jpg') no-repeat center;
         background-size: cover;
     }
 
@@ -366,12 +367,11 @@ html, body {
     text-align: center;
     position: relative;
     color: #fff;
-    background-color: #8BC34A;
-    background-color: rgba(140, 215, 144, .8);
+    background-color: #4D9078;
 }
 
     .slogan-top-red .slogan {
-        padding-top: 30px;
+        padding-top: 10px;
     }
 
         .slogan-top-red .slogan h1 {
@@ -436,13 +436,12 @@ html, body {
     }
 
     .top-buttons .button-red {
-        background-color: #8BC34A;
-        background-color: rgba(140, 215, 144, .7);
+        background-color: #F25F5C;
         margin-right: 15px;
     }
 
         .top-buttons .button-red:hover {
-            background-color: #285943;
+            background-color: #D7263D;
         }
 
     .top-buttons .button-transp {
@@ -591,7 +590,7 @@ html, body {
                 position: absolute;
                 top: 0;
                 height: 171px;
-                background-color: #8BC34A;
+                background-color: #F2C14E;
                 opacity: .25;
                 width: 171px;
                 left: 0;
@@ -607,7 +606,7 @@ html, body {
         height: 175px;
         width: 175px;
         border-radius: 50%;
-        border: 2px solid #8BC34A;
+        border: 2px solid #F2C14E;
         position: relative;
     }
 
@@ -685,7 +684,7 @@ html, body {
     height: 330px;
     text-align: center;
     color: #fff;
-    background-color: #8BC34A;
+    background-color: #4D9078;
     margin-top: 15px;
 }
 
@@ -1471,7 +1470,7 @@ html, body {
     }
 
     .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
-                    color: gold;
+                    color: #FFE066;
                     font-size: 11px;
                     text-decoration: none;
                 }

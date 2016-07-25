@@ -25,7 +25,7 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     });
 
-    $('.left-side-bar .menu ul li').click(function () {
+    $('.left-side-bar .menu ul li').click(function (e) {
             $('.left-side-bar .menu ul li').each(function () {
                 $(this).removeClass('active');
             })
@@ -33,7 +33,7 @@ $(document).ready(function () {
     //        $('html, body').stop().animate({
     //            scrollTop: $($(this).children('a').attr('href')).offset().top
     //        }, 500);
-            var offs = $($(this).children('a').attr('href')).offset().top
+            var offs = $($(this).children('a').attr('href')).offset().top;
             console.log(offs);
             console.log($(this).offset().top);
             if (offs > $(this).offset().top) {
