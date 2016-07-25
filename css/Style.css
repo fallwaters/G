@@ -196,23 +196,23 @@ html, body {
             }
 
 .left-side-bar {
-    background-color: #000;
+    background-color: #fff;
     height: 100%;
     width: 200px;
     position: fixed;
     top: 0;
-    -webkit-box-shadow: 0 0 20px 0 #000000;
-    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 0 0 20px 0 #000000;
-    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.45);
-    box-shadow: 0 0 20px 0 #000000;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0 0 10px 0 #000000;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0 0 10px 0 #000000;
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 10px 0 #000000;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
     z-index: 100;
 }
 
     .left-side-bar .left-side-top {
 		position: fixed;
-        background-color: #000;
+        background-color: #fff;
         padding: 1px 0 1px 0;
     }
 
@@ -233,7 +233,7 @@ html, body {
         position: relative;
         z-index: 101;
         margin-top: 220px;
-        background-color: #000;
+        background-color: #fff;
     }
 
         .left-side-bar .menu ul {
@@ -251,7 +251,7 @@ html, body {
                 text-decoration: none;
                 text-transform: uppercase;
                 font-size: 12px;
-                color: #fff;
+                color: #000;
                 transition: .3s;
             }
 
@@ -273,7 +273,7 @@ html, body {
     .left-side-bar .left-side-contacts {
         margin-top: 370px;
         text-align: center;
-        color: #fff;
+        color: #000;
         border-bottom: 1px solid #fff;
 		border-top: 1px solid #fff;
         padding-bottom: 12px;
