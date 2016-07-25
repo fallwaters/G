@@ -20,7 +20,6 @@ html, body {
 .container {
     padding: 0;
     margin: 0 auto;
-    width: 83%;
     z-index: 1000;
 }
 
