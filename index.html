@@ -456,77 +456,54 @@
                 <div class="review-btn col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col">Оставить отзыв</div>
             </section>
 			 <section id="prices" class="prices clearfix">
-                <h1 class="fadeInDown">Наши услуги</h1>
-                <div class="uslugi col-xs-12 col-sm-5 col">
-                    <div>
-                        Мониторинг объявлений,<br />
-                        обзвон, вычисление перекупщиков,<br />
-                        комиссионок и мошенников
-                    </div>
-                    <div>
-                        Осмотр 5-6 автомобилей<br />
-                        за один день, проверка документов<br />
-                        владельца
-                    </div>
-                    <div>Проверка в ГИБДД</div>
-                    <div>
-                        Внешний осмотр<br />
-                        автомобиля
-                    </div>
-                    <div>Диагностика ходовой части</div>
-                    <div>
-                        Диагностика степени<br />
-                        износа двигателя, проверка спидометра<br />
-                        на предмет скручивания
-                    </div>
-                    <div>
-                        Считывание ошибок<br />
-                        диагностическим оборудованием
-                    </div>
-                    <div>
-                        Проверка всех электронных<br />
-                        блоков автомобиля
-                    </div>
-                    <div>
-                        Проверка толщины<br />
-                        лакокрасочного покрытия
-                    </div>
-                    <div>Проверка геометрии кузова</div>
-                </div>
-                <div class="price col-xs-12 col-sm-7 col">
-                    <h3>Стоимость</h3>
-                    <div class="red-border col-xs-12 col">
-                        <div class="price-descr">
-                            <div>Выездная проверка автомобиля экспертом - от 3500 руб.</div>
-                            <div>Эксперт на день - от 8000 руб.</div>
-                            <div>Подбор авто под ключ</div>
-                        </div>
-                        <div class="descriptions col-xs-12 col">
-                            <div class="descr-price col-xs-4 col clearfix">
-                                <div>
-                                    Стоимость авто<br />
-                                    до 600 т.р.
-                                </div>
-                                <h4>19 000 руб.</h4>
-                            </div>
-                            <div class="descr-price col-xs-4 col clearfix">
-                                <div>
-                                    Стоимость авто<br />
-                                    от 600 до 1000 т.р.
-                                </div>
-                                <h4>22 000 руб.</h4>
-                            </div>
-                            <div class="descr-price col-xs-4 col clearfix">
-                                <div>
-                                    Стоимость авто<br />
-                                    от 1 млн.р.
-                                </div>
-                                <h4>от 26 000 руб.</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="podrobnee-btn col-xs-12 col-sm-6 col-sm-offset-3 col">Узнать подробнее</div>
-                </div>
+                <h1 class="fadeInDown">Прайс лист на наши услуги</h1>
+					<button class="accordion">Потолки</button>
+				 		<div class="panel">
+							<div class="disassembly">Стоимость демонтажных работ</div>
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+							<div class="assembly">Стоимость монтажных работ</div>
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+				 		</div>
+					<button class="accordion">Стены</button>
+				 		<div class="panel">
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+				 		</div>
+					<button class="accordion">Пол</button>
+				 		<div class="panel">
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+				 		</div>
+				 	<button class="accordion">Электрика</button>
+				 		<div class="panel">
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+				 		</div>
+					<button class="accordion">Сантехника</button>
+				 		<div class="panel">
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+				 		</div>
+				 	<button class="accordion">Двери</button>
+				 		<div class="panel">
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+				 		</div>
+					<button class="accordion">Установка кондиционеров</button>
+						<div class="panel">
+				 			<div class="name">Наименование работ</div>
+							<div class="measure">Ед. изм.</div>
+							<div class="cost">Цена &#8381;</div>
+				 		</div>
             </section>
             <section id="contacts" class="our-contacts clearfix">
                 <h1 class="fadeInDown">Как с нами связаться</h1>
@@ -731,5 +708,16 @@
             }
         });
     </script>
+	<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+
+					for (i = 0; i < acc.length; i++) {
+						acc[i].onclick = function(){
+							this.classList.toggle("active");
+							this.nextElementSibling.classList.toggle("show");
+					  }
+					}
+	</script>
 </body>
 </html>
