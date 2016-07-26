@@ -25,33 +25,42 @@ $(document).ready(function () {
         $(this).parent().addClass('active');
     });
 
-    $('.left-side-bar .menu ul li').click(function () {
-        $('.left-side-bar .menu ul li').each(function () {
-            $(this).removeClass('active');
-        })
+    $('.left-side-bar .menu ul li').click(function (e) {
+            $('.left-side-bar .menu ul li').each(function () {
+                $(this).removeClass('active');
+            })
+                $(this).addClass('active');
+    //        $('html, body').stop().animate({
+    //            scrollTop: $($(this).children('a').attr('href')).offset().top
+    //        }, 500);
+            var offs = $($(this).children('a').attr('href')).offset().top;
+            console.log(offs);
+            console.log($(this).offset().top);
+            if (offs > $(this).offset().top) {
+              $('html, body').stop().animate({
+                  scrollTop: offs + 20
+              }, 500, function() {
 
-        $(this).addClass('active');
-//        $('html, body').stop().animate({
-//            scrollTop: $($(this).children('a').attr('href')).offset().top
-//        }, 500);
-        var offs = $($(this).children('a').attr('href')).offset().top
-        console.log(offs);
-        console.log($(this).offset().top);
-        if (offs > $(this).offset().top) {
-          $('html, body').stop().animate({
-              scrollTop: offs + 20
-          }, 500, function() {
-        
-          $('html, body').animate({
-              scrollTop: offs
-          }, 200);
-        });
-        }
-        else {
-            $('html, body').stop().animate({
-              scrollTop: offs
-          }, 500)};
-        e.preventDefault();
+              $('html, body').animate({
+                  scrollTop: offs
+              }, 200);
+            });
+            }
+            else if (offs < $(this).offset().top) {
+                $('html, body').stop().animate({
+                  scrollTop: offs - 20
+              }, 500, function() {
+
+              $('html, body').animate({
+                  scrollTop: offs
+              }, 200);
+            });
+            }
+            else {
+                $('html, body').stop().animate({
+                  scrollTop: offs
+              }, 500)};
+            e.preventDefault();
     });
 
     $('.burger').click(function () {
