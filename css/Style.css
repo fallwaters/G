@@ -1519,7 +1519,7 @@ div.panel .disassembly, div.panel .assembly{
 
     .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
                     color: #FFE066;
-                    font-size: 11px;
+                    font-size: 12px;
                     text-decoration: none;
                 }
         .about-us .icons .second, .about-us .icons .third, .about-us .icons .fourth {
@@ -1603,11 +1603,12 @@ div.panel .disassembly, div.panel .assembly{
 
     .left-side-bar .menu ul li {
         padding: 10px 15px;
+        line-height: 10px;
     }
     
 
     .left-side-bar .menu ul a {
-        font-size: 10px;
+        font-size: 11px;
     }
     
     .left-side-bar .top-logo {
