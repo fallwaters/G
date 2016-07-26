@@ -1119,6 +1119,18 @@ div.panel {
 div.panel.show {
     display: block;
 }
+td.prices-names{
+	text-align: left;
+	border: 1px solid red;
+}
+td.measure{
+	text-align: center;
+	border: 1px solid red;
+}
+td.value{
+	text-align: center;
+	border: 1px solid red;
+}
 /*div.panel .name{
 	display: inline-block;
 	vertical-align: middle;
