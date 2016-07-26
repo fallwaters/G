@@ -1119,25 +1119,29 @@ div.panel {
 div.panel.show {
     display: block;
 }
-div.panel .name{
-	float:left;
+/*div.panel .name{
+	display: inline-block;
+	vertical-align: middle;
 	width: 50%;
+	border-right: 1px solid black;
 }
 div.panel .measure{
-	float:left;
-	width: 25%;
+	display: inline-block;
 	text-align: center;
+	vertical-align: middle;
+	width: 20%;
+	border-right: 1px solid black;
 }
 div.panel .cost{
-	float:left;
-	width: 25%;
+	display: inline-block;
 	text-align: center;
+	vertical-align: middle;
+	width: 28%;
 }
 div.panel .disassembly, div.panel .assembly{
 	text-align: center;
 	padding: 10px;
-	border: 1px solid black;
-}
+}*/
 .our-contacts .contacts {
     border-right: 5px solid #8BC34A;
     margin-top: 90px;
@@ -1458,7 +1462,7 @@ div.panel .disassembly, div.panel .assembly{
 
 @media(min-width: 768px) and (orientation: portrait) {
     .left-side-bar .left-side-contacts {
-        margin-top: 58px;
+        margin-top: 111px;
     }
 	.left-side-bar {
         width: 129px;
@@ -1467,7 +1471,7 @@ div.panel .disassembly, div.panel .assembly{
 
 @media(min-width: 768px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 58px;
+        margin-top: 111px;
     }
     .left-side-bar {
         width: 129px;
@@ -1781,7 +1785,7 @@ div.panel .disassembly, div.panel .assembly{
 
 @media (min-width: 992px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 30px;
+        margin-top: 121px;
     }
 }
 
@@ -2022,7 +2026,7 @@ div.panel .disassembly, div.panel .assembly{
     }
 
     .left-side-bar .left-side-contacts {
-        margin-top: 89px;
+        margin-top: 130px;
     }
 
         .left-side-bar .left-side-contacts .phone {

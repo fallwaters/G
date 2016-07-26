@@ -1,723 +1,2131 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Александр Гилев" />
-    <!--
-	<meta name="description" content="Подбор автомобилей в Москве и Подмосковье по выгодным ценам. Личная консультация, проверка и диагностика авто экспертом. Выезд с клиентом на просмотр найденного авто и его покупка">
-    <meta name="keywords" content="Подбор авто, автомобилей, эксперт на день, диагностика, проверка, толщина краски, геометрия кузова, дефекты двигателя, коррозия, неполадки с коробкой передач, консультация, проверка в ГИБДД, подбор авто под ключ">
-    <meta name="title" content="Гилев.рф - подбор автомобилей в Москве и Подмосковье" />
-	-->
-	<meta name="yandex-verification" content="74a87253b00c0b10" />
-	<meta name='wmail-verification' content='18c40e839025ee5d6fd646a361d5e441' />
-    <!--
-	<title>Гилев.рф - подбор автомобилей в Москве и Подмосковье</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	-->
-    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/Style.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Александр Гилев" />
+      <!--
+         <meta name="description" content="Подбор автомобилей в Москве и Подмосковье по выгодным ценам. Личная консультация, проверка и диагностика авто экспертом. Выезд с клиентом на просмотр найденного авто и его покупка">
+            <meta name="keywords" content="Подбор авто, автомобилей, эксперт на день, диагностика, проверка, толщина краски, геометрия кузова, дефекты двигателя, коррозия, неполадки с коробкой передач, консультация, проверка в ГИБДД, подбор авто под ключ">
+            <meta name="title" content="Гилев.рф - подбор автомобилей в Москве и Подмосковье" />
+         -->
+      <meta name="yandex-verification" content="74a87253b00c0b10" />
+      <meta name='wmail-verification' content='18c40e839025ee5d6fd646a361d5e441' />
+      <!--
+         <title>Гилев.рф - подбор автомобилей в Москве и Подмосковье</title>
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+         -->
+      <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="css/Style.css" rel="stylesheet" />
+      <link href="css/animate.css" rel="stylesheet" />
+      <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-	<!Добавить яндекс метрику-->
-    <div id="top" class="wrapper container row">
-        <div class="smoke"></div>
-        <div class="visible-xs col-xs-12 col menu-xs">
+      <![endif]-->
+   </head>
+   <body>
+      <!Добавить яндекс метрику-->
+      <div id="top" class="wrapper container row">
+         <div class="smoke"></div>
+         <div class="visible-xs col-xs-12 col menu-xs">
             <div class="burger">
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
-                <span class="menu-line"></span>
+               <span class="menu-line"></span>
+               <span class="menu-line"></span>
+               <span class="menu-line"></span>
             </div>
             <ul>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#scheme">Дизайн интерьера</a></li>
-				<li><a href="#deals">Наши работы</a></li>
-                <li><a href="#prices">Стоимость услуг</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+               <li><a href="#about">О нас</a></li>
+               <li><a href="#scheme">Дизайн интерьера</a></li>
+               <li><a href="#deals">Наши работы</a></li>
+               <li><a href="#prices">Стоимость услуг</a></li>
+               <li><a href="#contacts">Контакты</a></li>
             </ul>
-        </div>
-        <div class="hidden-xs col-sm-2 col blank">
-
-        </div>
-        <div class="left-side-bar hidden-xs col-sm-2 col">
+         </div>
+         <div class="hidden-xs col-sm-2 col blank">
+         </div>
+         <div class="left-side-bar hidden-xs col-sm-2 col">
             <div class="left-side-top">
-                <a href="#top"><div class="top-logo"></div></a>
+               <a href="#top">
+                  <div class="top-logo"></div>
+               </a>
             </div>
             <div class="menu">
-                <ul>
-                    <li><a href="#about">О нас</a></li>
-                	<li><a href="#scheme">Дизайн интерьера</a></li>
-					<li><a href="#deals">Наши работы</a></li>
-                	<li><a href="#prices">Стоимость услуг</a></li>
-                	<li><a href="#contacts">Контакты</a></li>
-                </ul>
-                <div class="left-side-contacts">
-                    <div class="phone">+7 (965) 136-79-83</div>
-                    <div class="time">с 9:00 до 22:00<br />без выходных</div>
-					<div class="socials">
-                        <a href="https://new.vk.com/gilevrf" target="_blank" class="vk"></a>
-                        <a href="https://www.youtube.com/channel/UCqVGvBlmMNaN1lNy9wrlfaQ" target="_blank" class="utube"></a>
-                    </div>
-                </div>
+               <ul>
+                  <li><a href="#about">О нас</a></li>
+                  <li><a href="#scheme">Дизайн интерьера</a></li>
+                  <li><a href="#deals">Наши работы</a></li>
+                  <li><a href="#prices">Стоимость услуг</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+               </ul>
+               <div class="left-side-contacts">
+                  <div class="phone">+7 (965) 136-79-83</div>
+                  <div class="time">с 9:00 до 22:00<br />без выходных</div>
+                  <div class="socials">
+                     <a href="https://new.vk.com/gilevrf" target="_blank" class="vk"></a>
+                     <a href="https://www.youtube.com/channel/UCqVGvBlmMNaN1lNy9wrlfaQ" target="_blank" class="utube"></a>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="main-part col-xs-12 col-sm-10 col">
+         </div>
+         <div class="main-part col-xs-12 col-sm-10 col">
             <section class="top-line">
-
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators circles">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img class="slider-img one">
-                        </div>
-                        <div class="item">
-                            <img class="slider-img two">
-                        </div>
-                        <div class="item">
-                            <img class="slider-img three">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slogan-top-red">
-                    <div class="slogan">
-                        <h1>Ваш помощник в большом городе</h1>
-                        <p>Выполним ремонтные и отделочные работы любой сложности</p>
-                    </div>
-                </div>
-                <div class="top-buttons">
-                    <div class="button-red">Оставить заявку</div>
-                    <div class="button-transp"><a href="#prices">Узнать больше</a></div>
-                </div>
+               <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators circles">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                     <div class="item active">
+                        <img class="slider-img one">
+                     </div>
+                     <div class="item">
+                        <img class="slider-img two">
+                     </div>
+                     <div class="item">
+                        <img class="slider-img three">
+                     </div>
+                  </div>
+               </div>
+               <div class="slogan-top-red">
+                  <div class="slogan">
+                     <h1>Ваш помощник в большом городе</h1>
+                     <p>Выполним ремонтные и отделочные работы любой сложности</p>
+                  </div>
+               </div>
+               <div class="top-buttons">
+                  <div class="button-red">Оставить заявку</div>
+                  <div class="button-transp"><a href="#prices">Узнать больше</a></div>
+               </div>
             </section>
             <section id="about" class="about-us clearfix">
-                <h1>Почему мы?</h1>
-                <div class="icons col-xs-12 col">
-                    <div class="clearfix col-xs-12 col-sm-2 col first">
-                        <div class="icon">
-                            <div class="first-circle-icon "></div>
-                        </div>
-                        <h4>Время</h4>
-                        <p>
-                            Вы не тратите время<br />
-                            на поиски специалистов.
-							Наши специалисты<br />
-							проверены временем.
-                        </p>
-                    </div>
-                    <div class="clearfix col-xs-12 col-sm-2 col second">
-                        <div class="icon">
-                            <div class="second-circle-icon "></div>
-                        </div>
-                        <h4>Уверенность</h4>
-                        <p>
-                            Наши монтажники,<br />
-                            электрики, плиточники - <br />
-                            специалисты своего дела.
-                        </p>
-                    </div>
-                    <div class="clearfix col-xs-12 col-sm-2 col third">
-                        <div class="icon">
-                            <div class="third-circle-icon "></div>
-                        </div>
-                        <h4>Бюджет</h4>
-                        <p>
-                            В нашей компании<br />
-							нет лишних звеньев,<br />
-							сторонних рабочих и <br />
-							субподрядчиков, поэтому<br />
-							Вы экономите средства.
-                        </p>
-                    </div>
-                    <div class="clearfix col-xs-12 col-sm-2 col fourth">
-                        <div class="icon">
-                            <div class="fourth-circle-icon "></div>
-                        </div>
-                        <h4>Удобство</h4>
-                        <p>
-                            Вы приезжаете только 1 раз<br />
-                            на сдачу объекта,<br />
-							все остальные вопросы<br />
-							мы берем на себя.
-                        </p>
-                    </div>
-                </div>
+               <h1>Почему мы?</h1>
+               <div class="icons col-xs-12 col">
+                  <div class="clearfix col-xs-12 col-sm-2 col first">
+                     <div class="icon">
+                        <div class="first-circle-icon "></div>
+                     </div>
+                     <h4>Время</h4>
+                     <p>
+                        Вы не тратите время<br />
+                        на поиски специалистов.
+                        Наши специалисты<br />
+                        проверены временем.
+                     </p>
+                  </div>
+                  <div class="clearfix col-xs-12 col-sm-2 col second">
+                     <div class="icon">
+                        <div class="second-circle-icon "></div>
+                     </div>
+                     <h4>Уверенность</h4>
+                     <p>
+                        Наши монтажники,<br />
+                        электрики, плиточники - <br />
+                        специалисты своего дела.
+                     </p>
+                  </div>
+                  <div class="clearfix col-xs-12 col-sm-2 col third">
+                     <div class="icon">
+                        <div class="third-circle-icon "></div>
+                     </div>
+                     <h4>Бюджет</h4>
+                     <p>
+                        В нашей компании<br />
+                        нет лишних звеньев,<br />
+                        сторонних рабочих и <br />
+                        субподрядчиков, поэтому<br />
+                        Вы экономите средства.
+                     </p>
+                  </div>
+                  <div class="clearfix col-xs-12 col-sm-2 col fourth">
+                     <div class="icon">
+                        <div class="fourth-circle-icon "></div>
+                     </div>
+                     <h4>Удобство</h4>
+                     <p>
+                        Вы приезжаете только 1 раз<br />
+                        на сдачу объекта,<br />
+                        все остальные вопросы<br />
+                        мы берем на себя.
+                     </p>
+                  </div>
+               </div>
             </section>
             <section id="scheme" class="our-scheme clearfix">
-                <h1 class="fadeInDown">Как мы работаем</h1>
-                <div class="icons col-xs-12 col">
-                    <div class="first col-xs-12 col-sm-4 col clearfix">
-                        <h2>1</h2>
-                        <div class="icon"></div>
-                        <p>
-                            Личная консультация,<br />
-							разработка дизайн-проекта<br />
-                            и заключение договора<br />
-                            на оказание  услуг.
-                        </p>
-                    </div>
-                    <div class="second col-xs-12 col-sm-4 col clearfix">
-                        <h2>2</h2>
-                        <div class="icon"></div>
-                        <p>
-                            Контроль и закупка<br />
-							строительных материалов.<br />
-							Отправка фотоотчетов.
-                        </p>
-                    </div>
-                    <div class="third col-xs-12 col-sm-4 col clearfix">
-                        <h2>3</h2>
-                        <div class="icon"></div>
-                        <p>
-                            Сдача выполненных<br />
-							работ клиенту.
-                        </p>
-                    </div>
-                </div>
-                <div class="slogan-schema-red col-xs-12 col">
-                    <div class="slogan">
-                        <p>
-                            В большинстве случаев самостоятельная покупка подержанных автомобилей<br />
-                            приводит к покупке “хлама” на колесах
-                        </p>
-                        <h1>Доверьте выбор нашим профессионалам</h1>
-                        <div class="zayavka-slogan-btn">
-                            Оставить заявку
+               <h1 class="fadeInDown">Как мы работаем</h1>
+               <div class="icons col-xs-12 col">
+                  <div class="first col-xs-12 col-sm-4 col clearfix">
+                     <h2>1</h2>
+                     <div class="icon"></div>
+                     <p>
+                        Личная консультация,<br />
+                        разработка дизайн-проекта<br />
+                        и заключение договора<br />
+                        на оказание  услуг.
+                     </p>
+                  </div>
+                  <div class="second col-xs-12 col-sm-4 col clearfix">
+                     <h2>2</h2>
+                     <div class="icon"></div>
+                     <p>
+                        Контроль и закупка<br />
+                        строительных материалов.<br />
+                        Отправка фотоотчетов.
+                     </p>
+                  </div>
+                  <div class="third col-xs-12 col-sm-4 col clearfix">
+                     <h2>3</h2>
+                     <div class="icon"></div>
+                     <p>
+                        Сдача выполненных<br />
+                        работ клиенту.
+                     </p>
+                  </div>
+               </div>
+               <div class="slogan-schema-red col-xs-12 col">
+                  <div class="slogan">
+                     <p>
+                        В большинстве случаев самостоятельная покупка подержанных автомобилей<br />
+                        приводит к покупке “хлама” на колесах
+                     </p>
+                     <h1>Доверьте выбор нашим профессионалам</h1>
+                     <div class="zayavka-slogan-btn">
+                        Оставить заявку
+                     </div>
+                  </div>
+               </div>
+               <div class="car-clipart hidden-xs col-sm-12 col">
+                  <div class="car">
+                     <div class="paint">
+                        <div>
+                           Толщина<br />
+                           краски<br />
+                           отличается<br />
+                           от заводской<br />
+                           (битый<br />
+                           автомобиль)
                         </div>
-                    </div>
-                </div>
-                <div class="car-clipart hidden-xs col-sm-12 col">
-                    <div class="car">
-                        <div class="paint">
-                            <div>
-                                Толщина<br />
-                                краски<br />
-                                отличается<br />
-                                от заводской<br />
-                                (битый<br />
-                                автомобиль)
-                            </div>
+                     </div>
+                     <div class="kuzov">
+                        <div>
+                           Нарушена<br />
+                           геометрия<br />
+                           кузова
                         </div>
-                        <div class="kuzov">
-                            <div>
-                                Нарушена<br />
-                                геометрия<br />
-                                кузова
-                            </div>
+                     </div>
+                     <div class="engine">
+                        <div>
+                           Скрытые<br />
+                           дефекты<br />
+                           двигателя
                         </div>
-                        <div class="engine">
-                            <div>
-                                Скрытые<br />
-                                дефекты<br />
-                                двигателя
-                            </div>
+                     </div>
+                     <div class="rzha">
+                        <div>
+                           Коррозия<br />
+                           в недоступных<br />
+                           местах
                         </div>
-                        <div class="rzha">
-                            <div>
-                                Коррозия<br />
-                                в недоступных<br />
-                                местах
-                            </div>
+                     </div>
+                     <div class="transm">
+                        <div>
+                           Неполадки<br />
+                           с коробкой<br />
+                           передач
                         </div>
-                        <div class="transm">
-                            <div>
-                                Неполадки<br />
-                                с коробкой<br />
-                                передач
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </section>
             <section id="deals" class="our-deals clearfix">
-                <h1 class="fadeInDown">Совершенные сделки</h1>
-                <div class="deals col-xs-12 col clearfix">
-                    <div class="deal one col-xs-6 col-md-4 col clear">
-                        <div class="col-xs-10 col col-xs-offset-1">
-                            <div class="name">Дмитрий</div>
-                            <div class="car-model">Mazda 6</div>
-                            <div class="car-price">490 000 рублей</div>
-                            <div class="btn-more">Подробнее</div>
-                            <div class="car-review">Прочитать отзыв</div>
-                            <div class="deal-more">
-                                <div class="auto-pic"></div>
-                                <h4>Mazda 6</h4>
-                                <h4>Год выпуска: 2008</h4>
-                                <h4>Пробег: 69000км</h4>
-                                <h4 class="price-h4">Цена: 490 000р</h4>
-                                <div>
-                                    <p>
-                                        Двигатель 2.0 147л.с. АКПП, максимальная комплектация, штатная акустика BOSE, 1 владелец по ПТС и всего две крашеные детали. Автомобиль был выставлен за 515 тыс, нам удалось сторговать 25 тыс, поиск авто составил 23 дня.
-                                    </p>
-                                </div>
-                                <span class="close glyphicon glyphicon-remove"></span>
-                            </div>
-                            <div class="review">
-                                <span class="close glyphicon glyphicon-remove"></span>
-                                <h4>Mazda 6</h4>
-                                <h4>490 000 рублей</h4>
-                                <h5>Дмитрий</h5>
-                                <div>
-                                    <p>
-                                        Выражаю огромную благодарность Александру и его компании.
-                                        Когда обращался к нему, думал нереально найти мазду 6 в хорошей комплектации и с маленьким пробегом, да еще и не битую, оказалось я ошибался
-                                        За время поиска, почти месяц, Александр мне отзванивал почти каждый день рассказывал про новые варианты на рынке и почему не стоит их рассматривать.
-                                        Было несколько хороших вариантов, но Александр говорил "давай еще подождем, не торопись с покупкой" в итоге у меня отличный автомобиль.
-                                        Надумаю менять авто, снова обращусь сюда.
-                                    </p>
-                                </div>
-                            </div>
+               <h1 class="fadeInDown">Совершенные сделки</h1>
+               <div class="deals col-xs-12 col clearfix">
+                  <div class="deal one col-xs-6 col-md-4 col clear">
+                     <div class="col-xs-10 col col-xs-offset-1">
+                        <div class="name">Дмитрий</div>
+                        <div class="car-model">Mazda 6</div>
+                        <div class="car-price">490 000 рублей</div>
+                        <div class="btn-more">Подробнее</div>
+                        <div class="car-review">Прочитать отзыв</div>
+                        <div class="deal-more">
+                           <div class="auto-pic"></div>
+                           <h4>Mazda 6</h4>
+                           <h4>Год выпуска: 2008</h4>
+                           <h4>Пробег: 69000км</h4>
+                           <h4 class="price-h4">Цена: 490 000р</h4>
+                           <div>
+                              <p>
+                                 Двигатель 2.0 147л.с. АКПП, максимальная комплектация, штатная акустика BOSE, 1 владелец по ПТС и всего две крашеные детали. Автомобиль был выставлен за 515 тыс, нам удалось сторговать 25 тыс, поиск авто составил 23 дня.
+                              </p>
+                           </div>
+                           <span class="close glyphicon glyphicon-remove"></span>
                         </div>
-                    </div>
-                    <div class="deal two col-xs-6 col-md-4 col">
-                        <div class="col-xs-10 col col-xs-offset-1">
-                            <div class="name">Екатерина</div>
-                            <div class="car-model">Peugeot 207</div>
-                            <div class="car-price">260 000 рублей</div>
-                            <div class="btn-more">Подробнее</div>
-                            <div class="car-review">Прочитать отзыв</div>
-                            <div class="deal-more">
-                                <div class="auto-pic"></div>
-                                <h4>Peugeot 207</h4>
-                                <h4>Год выпуска: 2008</h4>
-                                <h4>Пробег: 67000км</h4>
-                                <h4 class="price-h4">Цена: 260 000р</h4>
-                                <div>
-                                    <p>
-                                        Двигатель 1.4 90л.с. АМТ (робот), 2 владельца, 3 крашеных детали. Был выставлен за 290тыс, удалось сторговать 30 000р.
-                                    </p>
-                                </div>
-                                <span class="close glyphicon glyphicon-remove"></span>
-                            </div>
-                            <div class="review">
-                                <span class="close glyphicon glyphicon-remove"></span>
-                                <h4>Peugeot 207</h4>
-                                <h4>260 000 рублей</h4>
-                                <h5>Екатерина</h5>
-                                <div>
-                                    <p>
-                                        Хочу оставить отзыв про компанию Александра.
-                                        Искала именно Пежо 207 с автоматом до 300 тыс. друзья посоветовали обратиться за помощью к экспертам, через яндекс я вышла на эту компанию и не пожалела, что обратилась именно сюда.
-                                        Александр когда услышал какую машину я хочу предлоджил мне рассмотреть другие варианты, причем он сразу назвал недостатки данной модели, о которых я прочла похже на автофоруме.
-                                        Но мне очень нравится Пежо, я хотела именно ее.
-                                        Поиск длился больше месяца, за это время я ему скинула наверное сто ссылок на разные машинки и по каждой он отчитался, по некоторым перезванивал сразу и рассказывал почему не стоит смотреть на такие объявления.
-                                        Вобщем благодаря компании Александра, я теперь обладательница Пежо 207, люблю свою машинку!
-                                        Ах, чуть не забыла, в автосервисе где я делал ТО, мне сказали что машина в отличном состоянии и в нее не придется вкладывать.
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="review">
+                           <span class="close glyphicon glyphicon-remove"></span>
+                           <h4>Mazda 6</h4>
+                           <h4>490 000 рублей</h4>
+                           <h5>Дмитрий</h5>
+                           <div>
+                              <p>
+                                 Выражаю огромную благодарность Александру и его компании.
+                                 Когда обращался к нему, думал нереально найти мазду 6 в хорошей комплектации и с маленьким пробегом, да еще и не битую, оказалось я ошибался
+                                 За время поиска, почти месяц, Александр мне отзванивал почти каждый день рассказывал про новые варианты на рынке и почему не стоит их рассматривать.
+                                 Было несколько хороших вариантов, но Александр говорил "давай еще подождем, не торопись с покупкой" в итоге у меня отличный автомобиль.
+                                 Надумаю менять авто, снова обращусь сюда.
+                              </p>
+                           </div>
                         </div>
-                    </div>
-                    <div class="deal three col-xs-6 col-md-4 col">
-                        <div class="col-xs-10 col col-xs-offset-1">
-                            <div class="name">Артур</div>
-                            <div class="car-model">Mitsubishi Lancer 9</div>
-                            <div class="car-price">220 000 рублей</div>
-                            <div class="btn-more">Подробнее</div>
-                            <div class="car-review">Прочитать отзыв</div>
-                            <div class="deal-more">
-                                <div class="auto-pic"></div>
-                                <h4>Mitsubishi Lancer 9</h4>
-                                <h4>Год выпуска: 2004</h4>
-                                <h4>Пробег: 148000км</h4>
-                                <h4 class="price-h4">Цена: 220 000р</h4>
-                                <div>
-                                    <p>
-                                        Двигатель 1.6 98л.с. АКПП, 2 владельца и ни одной крашеной детали!!!
-                                    </p>
-                                </div>
-                                <span class="close glyphicon glyphicon-remove"></span>
-                            </div>
-                            <div class="review">
-                                <span class="close glyphicon glyphicon-remove"></span>
-                                <h4>Mitsubishi Lancer 9</h4>
-                                <h4>220 000 рублей</h4>
-                                <h5>Артур</h5>
-                                <div>
-                                    <p>
-                                        Искал машину до 200 тыс. Хотел Фокус 2, Мазду 3 или Лансер 9.
-                                        Случайно наткнулся на компанию по подбору авто и позвонил (за спрос ведь денег не берут).
-                                        Ответил молодой человек.
-                                        На вопрос могу ли я рассчитывать на один из этих автомобилей за 200тыс получил примерно такой ответ: можешь рассчитывать на автохлам.
-                                        После недолгих переговоров я понял, что найти авто будет очень сложно и доверил это дело профессионалам, но с условием, что я буду ездить на осмотры тоже, а пока ищем авто попробую накопить еще немного или займу.
-                                        За две недели поисков мы посмотрели очень много объявлений, я узнал как определить по телефону стоит ехать смотреть или нет. Вот интересный факт, который я выявил, все продавцы врут.
-                                        Говорят, что не крашена, а оказывается, что была бита, причем очень сильно.
-                                        Очень много объявлений со скрученным пробегом, причем продавцы уверяют, что пробег родной.
-                                        Когда я начал думать, что разбираюсь, Александр предложил мне самому осмотреть автомобиль и даже дал толщиномер (компьютер не доверил), а сам стоял и молча наблюдал.
-                                        В итоге я не нашел ничего криминального, но оказался не прав.
-                                        За две недели поисков осмотров было очень много и я уже не надеялся на успех, но как то сутра мне позвонил Александр и предложил срочно ехать на осмотр машины, у меня не получилось съездить, он ездил на осмотр один.
-                                        Уже в обед я отпрашивался с работы, чтобы поехать оформлять своя будущий автомобиль. Мицубиси Лансер 2004 года, с пробегом 150000км, за которым следили и который ни разу не попадал в ДТП.
-                                        Но правда в 200 тысяч не уложился, пришлось отдать 220. Большое спасибо за помощь.
-                                    </p>
-                                </div>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="deal two col-xs-6 col-md-4 col">
+                     <div class="col-xs-10 col col-xs-offset-1">
+                        <div class="name">Екатерина</div>
+                        <div class="car-model">Peugeot 207</div>
+                        <div class="car-price">260 000 рублей</div>
+                        <div class="btn-more">Подробнее</div>
+                        <div class="car-review">Прочитать отзыв</div>
+                        <div class="deal-more">
+                           <div class="auto-pic"></div>
+                           <h4>Peugeot 207</h4>
+                           <h4>Год выпуска: 2008</h4>
+                           <h4>Пробег: 67000км</h4>
+                           <h4 class="price-h4">Цена: 260 000р</h4>
+                           <div>
+                              <p>
+                                 Двигатель 1.4 90л.с. АМТ (робот), 2 владельца, 3 крашеных детали. Был выставлен за 290тыс, удалось сторговать 30 000р.
+                              </p>
+                           </div>
+                           <span class="close glyphicon glyphicon-remove"></span>
                         </div>
-                    </div>
-                    <div class="deal four col-xs-6 col-md-4 col">
-                        <div class="col-xs-10 col col-xs-offset-1">
-                            <div class="car-model">Audi A4</div>
-                            <div class="car-price">665 000 рублей</div>
-                            <div class="btn-more">Подробнее</div>
-                            <div class="car-review">Прочитать отзыв</div>
-                            <div class="deal-more">
-                                <div class="auto-pic"></div>
-                                <h4>Audi A4</h4>
-                                <h4>Год выпуска: 2009</h4>
-                                <h4>Пробег: 89000км</h4>
-                                <h4 class="price-h4">Цена: 665 000р</h4>
-                                <div>
-                                    <p>
-                                        Двигатель 1.8 турбо, 160л.с. АКПП (вариатор), 1 владелец, вся в родной краске.
-                                        Был выставлен на продажу за 679 тыс, удалось снизить цену на 14тыс. На поиск данного авто ушло 14 дней.
-                                    </p>
-                                </div>
-                                <span class="close glyphicon glyphicon-remove"></span>
-                            </div>
-                            <div class="review">
-                                <span class="close glyphicon glyphicon-remove"></span>
-                                <h4>Audi A4</h4>
-                                <h4>665 000 рублей</h4>
-                            </div>
+                        <div class="review">
+                           <span class="close glyphicon glyphicon-remove"></span>
+                           <h4>Peugeot 207</h4>
+                           <h4>260 000 рублей</h4>
+                           <h5>Екатерина</h5>
+                           <div>
+                              <p>
+                                 Хочу оставить отзыв про компанию Александра.
+                                 Искала именно Пежо 207 с автоматом до 300 тыс. друзья посоветовали обратиться за помощью к экспертам, через яндекс я вышла на эту компанию и не пожалела, что обратилась именно сюда.
+                                 Александр когда услышал какую машину я хочу предлоджил мне рассмотреть другие варианты, причем он сразу назвал недостатки данной модели, о которых я прочла похже на автофоруме.
+                                 Но мне очень нравится Пежо, я хотела именно ее.
+                                 Поиск длился больше месяца, за это время я ему скинула наверное сто ссылок на разные машинки и по каждой он отчитался, по некоторым перезванивал сразу и рассказывал почему не стоит смотреть на такие объявления.
+                                 Вобщем благодаря компании Александра, я теперь обладательница Пежо 207, люблю свою машинку!
+                                 Ах, чуть не забыла, в автосервисе где я делал ТО, мне сказали что машина в отличном состоянии и в нее не придется вкладывать.
+                              </p>
+                           </div>
                         </div>
-                    </div>
-                    <div class="deal five col-xs-6 col-md-4 col">
-                        <div class="col-xs-10 col col-xs-offset-1">
-                            <div class="car-model">BMW 630</div>
-                            <div class="car-price">900 000 рублей</div>
-                            <div class="btn-more">Подробнее</div>
-                            <div class="car-review">Прочитать отзыв</div>
-                            <div class="deal-more">
-                                <div class="auto-pic"></div>
-                                <h4>BMW 630</h4>
-                                <h4>Год выпуска: 2009</h4>
-                                <h4>Пробег: 75000км</h4>
-                                <h4 class="price-h4">Цена: 900 000р</h4>
-                                <div>
-                                    <p>
-                                        Двигатель 3.0, 272л.с. АКПП, весь в родной краске, но пришлось перекрашивать передний и задний бампера, заодно отполировали весь авто.
-                                        Изначально был выставлен за 1.080.000р, сумма торга составила 180.000р
-                                    </p>
-                                </div>
-                                <span class="close glyphicon glyphicon-remove"></span>
-                            </div>
-                            <div class="review">
-                                <span class="close glyphicon glyphicon-remove"></span>
-                                <h4>BMW 630</h4>
-                                <h4>900 000 рублей</h4>
-                            </div>
+                     </div>
+                  </div>
+                  <div class="deal three col-xs-6 col-md-4 col">
+                     <div class="col-xs-10 col col-xs-offset-1">
+                        <div class="name">Артур</div>
+                        <div class="car-model">Mitsubishi Lancer 9</div>
+                        <div class="car-price">220 000 рублей</div>
+                        <div class="btn-more">Подробнее</div>
+                        <div class="car-review">Прочитать отзыв</div>
+                        <div class="deal-more">
+                           <div class="auto-pic"></div>
+                           <h4>Mitsubishi Lancer 9</h4>
+                           <h4>Год выпуска: 2004</h4>
+                           <h4>Пробег: 148000км</h4>
+                           <h4 class="price-h4">Цена: 220 000р</h4>
+                           <div>
+                              <p>
+                                 Двигатель 1.6 98л.с. АКПП, 2 владельца и ни одной крашеной детали!!!
+                              </p>
+                           </div>
+                           <span class="close glyphicon glyphicon-remove"></span>
                         </div>
-                    </div>
-                    <div class="deal six col-xs-6 col-md-4 col">
-                        <div class="col-xs-10 col col-xs-offset-1">
-                            <div class="car-model">Nissan Qashqai</div>
-                            <div class="car-price">500 000 рублей</div>
-                            <div class="btn-more">Подробнее</div>
-                            <div class="car-review">Прочитать отзыв</div>
-                            <div class="deal-more">
-                                <div class="auto-pic"></div>
-                                <h4>Nissan Qashqai</h4>
-                                <h4>Год выпуска: 2007</h4>
-                                <h4>Пробег: 87000км</h4>
-                                <h4 class="price-h4">Цена: 500 000р</h4>
-                                <div>
-                                    <p>
-                                        Двигатель 2.0л, 141л.с. АКПП (вариатор), полный привод, 1 владелец по ПТС, ни одной крашеной детали.
-                                        Был выставлен за 500.000р, без торга.
-                                    </p>
-                                </div>
-                                <span class="close glyphicon glyphicon-remove"></span>
-                            </div>
-                            <div class="review">
-                                <span class="close glyphicon glyphicon-remove"></span>
-                                <h4>Nissan Qashqai</h4>
-                                <h4>500 000 рублей</h4>
-                            </div>
+                        <div class="review">
+                           <span class="close glyphicon glyphicon-remove"></span>
+                           <h4>Mitsubishi Lancer 9</h4>
+                           <h4>220 000 рублей</h4>
+                           <h5>Артур</h5>
+                           <div>
+                              <p>
+                                 Искал машину до 200 тыс. Хотел Фокус 2, Мазду 3 или Лансер 9.
+                                 Случайно наткнулся на компанию по подбору авто и позвонил (за спрос ведь денег не берут).
+                                 Ответил молодой человек.
+                                 На вопрос могу ли я рассчитывать на один из этих автомобилей за 200тыс получил примерно такой ответ: можешь рассчитывать на автохлам.
+                                 После недолгих переговоров я понял, что найти авто будет очень сложно и доверил это дело профессионалам, но с условием, что я буду ездить на осмотры тоже, а пока ищем авто попробую накопить еще немного или займу.
+                                 За две недели поисков мы посмотрели очень много объявлений, я узнал как определить по телефону стоит ехать смотреть или нет. Вот интересный факт, который я выявил, все продавцы врут.
+                                 Говорят, что не крашена, а оказывается, что была бита, причем очень сильно.
+                                 Очень много объявлений со скрученным пробегом, причем продавцы уверяют, что пробег родной.
+                                 Когда я начал думать, что разбираюсь, Александр предложил мне самому осмотреть автомобиль и даже дал толщиномер (компьютер не доверил), а сам стоял и молча наблюдал.
+                                 В итоге я не нашел ничего криминального, но оказался не прав.
+                                 За две недели поисков осмотров было очень много и я уже не надеялся на успех, но как то сутра мне позвонил Александр и предложил срочно ехать на осмотр машины, у меня не получилось съездить, он ездил на осмотр один.
+                                 Уже в обед я отпрашивался с работы, чтобы поехать оформлять своя будущий автомобиль. Мицубиси Лансер 2004 года, с пробегом 150000км, за которым следили и который ни разу не попадал в ДТП.
+                                 Но правда в 200 тысяч не уложился, пришлось отдать 220. Большое спасибо за помощь.
+                              </p>
+                           </div>
                         </div>
-                    </div>
-                </div>
-                <div class="review-btn col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col">Оставить отзыв</div>
+                     </div>
+                  </div>
+                  <div class="deal four col-xs-6 col-md-4 col">
+                     <div class="col-xs-10 col col-xs-offset-1">
+                        <div class="car-model">Audi A4</div>
+                        <div class="car-price">665 000 рублей</div>
+                        <div class="btn-more">Подробнее</div>
+                        <div class="car-review">Прочитать отзыв</div>
+                        <div class="deal-more">
+                           <div class="auto-pic"></div>
+                           <h4>Audi A4</h4>
+                           <h4>Год выпуска: 2009</h4>
+                           <h4>Пробег: 89000км</h4>
+                           <h4 class="price-h4">Цена: 665 000р</h4>
+                           <div>
+                              <p>
+                                 Двигатель 1.8 турбо, 160л.с. АКПП (вариатор), 1 владелец, вся в родной краске.
+                                 Был выставлен на продажу за 679 тыс, удалось снизить цену на 14тыс. На поиск данного авто ушло 14 дней.
+                              </p>
+                           </div>
+                           <span class="close glyphicon glyphicon-remove"></span>
+                        </div>
+                        <div class="review">
+                           <span class="close glyphicon glyphicon-remove"></span>
+                           <h4>Audi A4</h4>
+                           <h4>665 000 рублей</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="deal five col-xs-6 col-md-4 col">
+                     <div class="col-xs-10 col col-xs-offset-1">
+                        <div class="car-model">BMW 630</div>
+                        <div class="car-price">900 000 рублей</div>
+                        <div class="btn-more">Подробнее</div>
+                        <div class="car-review">Прочитать отзыв</div>
+                        <div class="deal-more">
+                           <div class="auto-pic"></div>
+                           <h4>BMW 630</h4>
+                           <h4>Год выпуска: 2009</h4>
+                           <h4>Пробег: 75000км</h4>
+                           <h4 class="price-h4">Цена: 900 000р</h4>
+                           <div>
+                              <p>
+                                 Двигатель 3.0, 272л.с. АКПП, весь в родной краске, но пришлось перекрашивать передний и задний бампера, заодно отполировали весь авто.
+                                 Изначально был выставлен за 1.080.000р, сумма торга составила 180.000р
+                              </p>
+                           </div>
+                           <span class="close glyphicon glyphicon-remove"></span>
+                        </div>
+                        <div class="review">
+                           <span class="close glyphicon glyphicon-remove"></span>
+                           <h4>BMW 630</h4>
+                           <h4>900 000 рублей</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="deal six col-xs-6 col-md-4 col">
+                     <div class="col-xs-10 col col-xs-offset-1">
+                        <div class="car-model">Nissan Qashqai</div>
+                        <div class="car-price">500 000 рублей</div>
+                        <div class="btn-more">Подробнее</div>
+                        <div class="car-review">Прочитать отзыв</div>
+                        <div class="deal-more">
+                           <div class="auto-pic"></div>
+                           <h4>Nissan Qashqai</h4>
+                           <h4>Год выпуска: 2007</h4>
+                           <h4>Пробег: 87000км</h4>
+                           <h4 class="price-h4">Цена: 500 000р</h4>
+                           <div>
+                              <p>
+                                 Двигатель 2.0л, 141л.с. АКПП (вариатор), полный привод, 1 владелец по ПТС, ни одной крашеной детали.
+                                 Был выставлен за 500.000р, без торга.
+                              </p>
+                           </div>
+                           <span class="close glyphicon glyphicon-remove"></span>
+                        </div>
+                        <div class="review">
+                           <span class="close glyphicon glyphicon-remove"></span>
+                           <h4>Nissan Qashqai</h4>
+                           <h4>500 000 рублей</h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="review-btn col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 col">Оставить отзыв</div>
             </section>
-			 <section id="prices" class="prices clearfix">
-                <h1 class="fadeInDown">Прайс лист на наши услуги</h1>
-					<button class="accordion">Потолки</button>
-				 		<div class="panel">
-							<div class="disassembly">Стоимость демонтажных работ</div>
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-							<div class="assembly">Стоимость монтажных работ</div>
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-				 		</div>
-					<button class="accordion">Стены</button>
-				 		<div class="panel">
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-				 		</div>
-					<button class="accordion">Пол</button>
-				 		<div class="panel">
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-				 		</div>
-				 	<button class="accordion">Электрика</button>
-				 		<div class="panel">
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-				 		</div>
-					<button class="accordion">Сантехника</button>
-				 		<div class="panel">
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-				 		</div>
-				 	<button class="accordion">Двери</button>
-				 		<div class="panel">
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-				 		</div>
-					<button class="accordion">Установка кондиционеров</button>
-						<div class="panel">
-				 			<div class="name">Наименование работ</div>
-							<div class="measure">Ед. изм.</div>
-							<div class="cost">Цена &#8381;</div>
-				 		</div>
+            <section id="prices" class="prices clearfix">
+               <h1 class="fadeInDown">Прайс лист на наши услуги</h1>
+               <button class="accordion">Потолки</button>
+               <div class="panel">
+                  <table class="tableizer-table">
+					 <thead>
+                        <tr class="tableizer-firstrow">
+                           <th>Стоимость демонтажных работ</th>
+                        </tr>
+                     </thead>
+                     <thead>
+                        <tr class="tableizer-firstrow">
+                           <th>Наименование работ</th>
+                           <th>Ед. изм.</th>
+                           <th>Цена, руб.</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Размывка извести, водоэмульсионки, олифы</td>
+                           <td>м2</td>
+                           <td>100</td>
+                        </tr>
+                        <tr>
+                           <td>Очистка потолка от шпаклевки, краски, масла</td>
+                           <td>м2</td>
+                           <td>150</td>
+                        </tr>
+                        <tr>
+                           <td>Удаление старых обоев</td>
+                           <td>м2</td>
+                           <td>70</td>
+                        </tr>
+                        <tr>
+                           <td>Удаление плитки из полистирола</td>
+                           <td>м2</td>
+                           <td>70</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж подвесных потолков</td>
+                           <td>м2</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж потолочного плинтуса</td>
+                           <td>м/п</td>
+                           <td>30</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж лепнины</td>
+                           <td>м/п</td>
+                           <td>150</td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Стоимость монтажных работ</th>
+							</tr>
+						</thead>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Грунтовка потолка</td>
+                           <td>м2</td>
+                           <td>50</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство армировочной сетки 50х50 мм</td>
+                           <td>м2</td>
+                           <td>80</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство сетки рабицы на потолок</td>
+                           <td>м2</td>
+                           <td>85</td>
+                        </tr>
+                        <tr>
+                           <td>Штукатурка потолка слоем до 30 мм</td>
+                           <td>м2</td>
+                           <td>410</td>
+                        </tr>
+                        <tr>
+                           <td>Штукатурка потолка слоем от 30 мм до 60 мм</td>
+                           <td>м2</td>
+                           <td>500</td>
+                        </tr>
+                        <tr>
+                           <td>Шпаклевка потолка 1 слой</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Шпаклевка потолка 2 слой</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Финишная шпаклевка и шлифовка потолка под покраску</td>
+                           <td>м2</td>
+                           <td>180</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство стеклохолста типа «паутинка»</td>
+                           <td>м2</td>
+                           <td>130</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолка водоэмульсионной краской</td>
+                           <td>м2</td>
+                           <td>200</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолка масляной краской</td>
+                           <td>м2</td>
+                           <td>300</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолка декоративными красками с помощью краскопульта</td>
+                           <td>м2</td>
+                           <td>420</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка потолочных обоев</td>
+                           <td>м2</td>
+                           <td>300</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство декоративной штукатурки на потолок</td>
+                           <td>м2</td>
+                           <td>1100</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство венецианской штукатурки на потолок</td>
+                           <td>м2</td>
+                           <td>1650</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного потолка типа «армстронг»</td>
+                           <td>м2</td>
+                           <td>435</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство реечного подвесного потолка</td>
+                           <td>м2</td>
+                           <td>380</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного пластикового потолка без обрешетки</td>
+                           <td>м2</td>
+                           <td>750</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного пластикового потолка с обрешеткой</td>
+                           <td>м2</td>
+                           <td>850</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного потолка из гипсокартона (ГКЛ)</td>
+                           <td>м2</td>
+                           <td>690</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного потолка из гипсокартона (ГКЛ) в 2 слоя</td>
+                           <td>м2</td>
+                           <td>890</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство армирующей ленты на швах</td>
+                           <td>м2</td>
+                           <td>100</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство потолочного портала полукруглой формы</td>
+                           <td>м/п</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство потолочного портала прямоугольной формы</td>
+                           <td>м/п</td>
+                           <td>1600</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж потолочного плинтуса</td>
+                           <td>м/п</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолочного плинтуса</td>
+                           <td>м/п</td>
+                           <td>100</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж двухуровневого карниза</td>
+                           <td>м/п</td>
+                           <td>720</td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Прочие работы</th>
+							</tr>
+						</thead>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Прокладка труб вентиляции типа «спирафлекс»</td>
+                           <td>м/п</td>
+                           <td>310</td>
+                        </tr>
+                        <tr>
+                           <td>Прокладка труб вентиляции пластиковым прямоугольным коробом</td>
+                           <td>м/п</td>
+                           <td>360</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <button class="accordion">Стены</button>
+               <div class="panel">
+                  <table class="tableizer-table">
+                     <thead>
+                        <tr class="tableizer-firstrow">
+                           <th>Стоимость демонтажных работ</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td> </td>
+                           <td> </td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Снос перегородок из ГКЛ, Фанеры</td>
+                           <td>м2</td>
+                           <td>150</td>
+                        </tr>
+                        <tr>
+                           <td>Снос перегородок (кирпич, ацеид, гипсолит)</td>
+                           <td>м2</td>
+                           <td>380</td>
+                        </tr>
+                        <tr>
+                           <td>Снос не несущих бетонных стен (межкомнатных перегородок до 10 см.)</td>
+                           <td>м2</td>
+                           <td>1500</td>
+                        </tr>
+                        <tr>
+                           <td>Очистка стен от старых обоев (1 слой)</td>
+                           <td>м2</td>
+                           <td>65</td>
+                        </tr>
+                        <tr>
+                           <td>Очистка стен от масляной краски, шпаклевки</td>
+                           <td>м2</td>
+                           <td>130</td>
+                        </tr>
+                        <tr>
+                           <td>Размывка стен</td>
+                           <td>м2</td>
+                           <td>80</td>
+                        </tr>
+                        <tr>
+                           <td>Удаление старой штукатурки слоем до 20 мм</td>
+                           <td>м2</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Удаление старой штукатурки слоем свыше 20 мм</td>
+                           <td>        м2</td>
+                           <td>       240</td>
+                        </tr>
+                        <tr>
+                           <td>Удаление старой штукатурки слоем свыше 20 мм с армированной сеткой</td>
+                           <td>        м2</td>
+                           <td>       300</td>
+                        </tr>
+                        <tr>
+                           <td>Удаление настенной плитки</td>
+                           <td>м2</td>
+                           <td>180</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж подоконной части из бетона</td>
+                           <td>м2</td>
+                           <td>5200</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж подоконной части из кирпича</td>
+                           <td>м2</td>
+                           <td>1600</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж подоконной части из пенобетона</td>
+                           <td>м2</td>
+                           <td>350</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж деревянных встроенных шкафов, антресолей и т.д.</td>
+                           <td>м2</td>
+                           <td>500</td>
+                        </tr>
+                        <tr>
+                           <td>Подрезка проема под дверную коробку (гипсолит)</td>
+                           <td>м/п</td>
+                           <td>850</td>
+                        </tr>
+                        <tr>
+                           <td>Подрезка проема под дверную коробку (кирпич)</td>
+                           <td>м/п</td>
+                           <td>1200</td>
+                        </tr>
+                        <tr>
+                           <td>Подрезка проема под дверную коробку (бетон)</td>
+                           <td>м/п</td>
+                           <td>3550</td>
+                        </tr>
+                        <thead>
+                        	<tr class="tableizer-firstrow">
+                           		<th>Стоимость монтажных работ</th>
+                        	</tr>
+						</thead>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Устройство межкомнатных перегородок из пазогребневого блока</td>
+                           <td>м2</td>
+                           <td>700</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство межкомнатных перегородок из газосиликатного блока, пеноблока</td>
+                           <td>м2</td>
+                           <td>750</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство перегородок и окон из стеклоблоков</td>
+                           <td>м2</td>
+                           <td>2140</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство перемычек над дверными проемами</td>
+                           <td>м2</td>
+                           <td>250</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж перегородок из гипсокартона с предварительным изготовлением каркаса (1 слой)</td>
+                           <td>м2</td>
+                           <td>810</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж перегородок из гипсокартона с предварительным изготовлением каркаса (2 слоя)</td>
+                           <td>м2</td>
+                           <td>970</td>
+                        </tr>
+                        <tr>
+                           <td>Звукоизоляция гипсокартоновых перегородок минеральной ватой</td>
+                           <td>м2</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Грунтовка стен</td>
+                           <td>м2</td>
+                           <td>40</td>
+                        </tr>
+                        <tr>
+                           <td>Грунтовка стен бетоноконтактом</td>
+                           <td>м2</td>
+                           <td>60</td>
+                        </tr>
+                        <tr>
+                           <td>Штукатурка стен слоем до 30 мм</td>
+                           <td>м2</td>
+                           <td>380</td>
+                        </tr>
+                        <tr>
+                           <td>Штукатурка стен слоем свыше 30 мм</td>
+                           <td>м2</td>
+                           <td>420</td>
+                        </tr>
+                        <tr>
+                           <td>Штукатурка откосов</td>
+                           <td>м/п</td>
+                           <td>440</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска откосов в 2 слоя</td>
+                           <td>м/п</td>
+                           <td>220</td>
+                        </tr>
+                        <tr>
+                           <td>Установка перфорированного уголка</td>
+                           <td>м/п</td>
+                           <td>110</td>
+                        </tr>
+                        <tr>
+                           <td>Шпаклевка стен первый слой</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Шпаклевка стен второй слой</td>
+                           <td>м2</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Финишная шпаклевка и шлифовка стен</td>
+                           <td>м2</td>
+                           <td>140</td>
+                        </tr>
+                        <tr>
+                           <td>Шпаклевка и шлифовка откосов</td>
+                           <td>м2</td>
+                           <td>380</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство декоративной штукатурки</td>
+                           <td>м2</td>
+                           <td>от 620</td>
+                        </tr>
+                        <tr>
+                           <td>Нанесение венецианской штукатурки (первый слой)</td>
+                           <td>м2</td>
+                           <td>от 1320</td>
+                        </tr>
+                        <tr>
+                           <td>Нанесение венецианской штукатурки (второй слой)</td>
+                           <td>м2</td>
+                           <td>от 540</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство армировочной сетки 2х2 в тело шпаклевки</td>
+                           <td>м2</td>
+                           <td>70</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство стеклохолста типа «паутинка»</td>
+                           <td>м2</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка обоев (виниловые, бумажные)</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка рельефных обоев</td>
+                           <td>м2</td>
+                           <td>240</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка стеклообоев под покраску</td>
+                           <td>м2</td>
+                           <td>140</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка обоев с шелкографией</td>
+                           <td>м2</td>
+                           <td>220</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка текстильных обоев</td>
+                           <td>м2</td>
+                           <td>320</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка двухуровневых обоев с бордюром по середине</td>
+                           <td>м2</td>
+                           <td>320</td>
+                        </tr>
+                        <tr>
+                           <td>Нанесение жидких обоев</td>
+                           <td>м2</td>
+                           <td>180</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка стен самоклеящимися обоями</td>
+                           <td>м2</td>
+                           <td>200</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска стен водоэмульсионной краской в 2 слоя (2 цвета и более +20% к стоимости)</td>
+                           <td>м2</td>
+                           <td>200</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска стен масляной краской в 2 слоя</td>
+                           <td>м2</td>
+                           <td>220</td>
+                        </tr>
+                        <tr>
+                           <td>Нанесение фактурной краски</td>
+                           <td>м2</td>
+                           <td>330</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка плитки с подбором</td>
+                           <td>м2</td>
+                           <td>850</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка мелкой плитки (10х10, 15х15)</td>
+                           <td>м2</td>
+                           <td>960</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка мозаики</td>
+                           <td>м2</td>
+                           <td>1700</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка декоративной плитки</td>
+                           <td>м2</td>
+                           <td>1120</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка плитки из керамогранита</td>
+                           <td>м2</td>
+                           <td>840</td>
+                        </tr>
+                        <tr>
+                           <td>Подрезка плитки</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Затирка швов</td>
+                           <td>м2</td>
+                           <td>95</td>
+                        </tr>
+                        <tr>
+                           <td>Врезка отверстий в плитке</td>
+                           <td>м2</td>
+                           <td>155</td>
+                        </tr>
+                        <tr>
+                           <td>Установка бордюра</td>
+                           <td>м2</td>
+                           <td>400</td>
+                        </tr>
+                        <tr>
+                           <td>Запил торцов плитки под 45 градусов</td>
+                           <td>м2</td>
+                           <td>210</td>
+                        </tr>
+                        <tr>
+                           <td>Резка плитки по лекалам</td>
+                           <td>м2</td>
+                           <td>700</td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Грунтовка потолка</td>
+                           <td>м2</td>
+                           <td>50</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство армировочной сетки 50х50 мм</td>
+                           <td>м2</td>
+                           <td>80</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство сетки рабицы на потолок</td>
+                           <td>м2</td>
+                           <td>85</td>
+                        </tr>
+                        <tr>
+                           <td>Штукатурка потолка слоем до 30 мм</td>
+                           <td>м2</td>
+                           <td>410</td>
+                        </tr>
+                        <tr>
+                           <td>Штукатурка потолка слоем от 30 мм до 60 мм</td>
+                           <td>м2</td>
+                           <td>500</td>
+                        </tr>
+                        <tr>
+                           <td>Шпаклевка потолка 1 слой</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Шпаклевка потолка 2 слой</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Финишная шпаклевка и шлифовка потолка под покраску</td>
+                           <td>м2</td>
+                           <td>180</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство стеклохолста типа «паутинка»</td>
+                           <td>м2</td>
+                           <td>130</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолка водоэмульсионной краской</td>
+                           <td>м2</td>
+                           <td>200</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолка масляной краской</td>
+                           <td>м2</td>
+                           <td>300</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолка декоративными красками с помощью краскопульта</td>
+                           <td>м2</td>
+                           <td>420</td>
+                        </tr>
+                        <tr>
+                           <td>Поклейка потолочных обоев</td>
+                           <td>м2</td>
+                           <td>300</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство декоративной штукатурки на потолок</td>
+                           <td>м2</td>
+                           <td>1100</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство венецианской штукатурки на потолок</td>
+                           <td>м2</td>
+                           <td>1650</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного потолка типа «армстронг»</td>
+                           <td>м2</td>
+                           <td>435</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство реечного подвесного потолка</td>
+                           <td>м2</td>
+                           <td>380</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного пластикового потолка без обрешетки</td>
+                           <td>м2</td>
+                           <td>750</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного пластикового потолка с обрешеткой</td>
+                           <td>м2</td>
+                           <td>850</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного потолка из гипсокартона (ГКЛ)</td>
+                           <td>м2</td>
+                           <td>690</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство подвесного потолка из гипсокартона (ГКЛ) в 2 слоя</td>
+                           <td>м2</td>
+                           <td>890</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство армирующей ленты на швах</td>
+                           <td>м2</td>
+                           <td>100</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство потолочного портала полукруглой формы</td>
+                           <td>м/п</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство потолочного портала прямоугольной формы</td>
+                           <td>м/п</td>
+                           <td>1600</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж потолочного плинтуса</td>
+                           <td>м/п</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Покраска потолочного плинтуса</td>
+                           <td>м/п</td>
+                           <td>100</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж двухуровневого карниза</td>
+                           <td>м/п</td>
+                           <td>720</td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Прочие работы</th>
+							</tr>
+						</thead>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Прокладка труб вентиляции типа «спирафлекс»</td>
+                           <td>м/п</td>
+                           <td>310</td>
+                        </tr>
+                        <tr>
+                           <td>Прокладка труб вентиляции пластиковым прямоугольным коробом</td>
+                           <td>м/п</td>
+                           <td>360</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <button class="accordion">Пол</button>
+               <div class="panel">
+                  <table class="tableizer-table">
+                     <thead>
+                        <tr class="tableizer-firstrow">
+                           <th>Стоимость демонтажных работ</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td> </td>
+                           <td> </td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Демонтаж линолеума, ковролина</td>
+                           <td>м2</td>
+                           <td>30</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж паркета, ламината</td>
+                           <td>м2</td>
+                           <td>90</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж лаг</td>
+                           <td>м2</td>
+                           <td>120</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж плитки</td>
+                           <td>м2</td>
+                           <td>210</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж старой стяжки</td>
+                           <td>м2</td>
+                           <td>200</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж пола под сантехкабиной в типовых домах</td>
+                           <td>м2</td>
+                           <td>1100</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж плинтуса</td>
+                           <td>м/п</td>
+                           <td>30</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж плинтуса с арматурой</td>
+                           <td>м/п</td>
+                           <td>550</td>
+                        </tr>
+                      	<thead>
+                        	<tr class="tableizer-firstrow">
+                           		<th>Стоимость монтажных работ</th>
+                        	</tr>
+						</thead>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Устройство деревянных лаг</td>
+                           <td>м2</td>
+                           <td>140</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство регулируемых полов</td>
+                           <td>м2</td>
+                           <td>1400</td>
+                        </tr>
+                        <tr>
+                           <td>Настил половой доски</td>
+                           <td>м2</td>
+                           <td>330</td>
+                        </tr>
+                        <tr>
+                           <td>Настил дсп/оргалита, фанеры</td>
+                           <td>м2</td>
+                           <td>165</td>
+                        </tr>
+                        <tr>
+                           <td>Армирование стяжки сеткой 50х50</td>
+                           <td>м2</td>
+                           <td>55</td>
+                        </tr>
+                        <tr>
+                           <td>Частичное выравнивание пола (заделка трещин, отверстий)</td>
+                           <td>м2</td>
+                           <td>140</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство стяжки песчано-цементной смесью до 5 см</td>
+                           <td>м2</td>
+                           <td>430</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство стяжки песчано-цементной смесью свыше 5 см</td>
+                           <td>м2</td>
+                           <td>520</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство керамзитобетонной стяжки слоем до 10 см</td>
+                           <td>м2</td>
+                           <td>380</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство сухой стяжки по системе Knauf</td>
+                           <td>м2</td>
+                           <td>350</td>
+                        </tr>
+                        <tr>
+                           <td>Устройство наливного пола</td>
+                           <td>м2</td>
+                           <td>345</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка линолеума</td>
+                           <td>м2</td>
+                           <td>280</td>
+                        </tr>
+                        <tr>
+                           <td>Настил ковролина</td>
+                           <td>м2</td>
+                           <td>260</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка ламината (диагональ +20%)</td>
+                           <td>м2</td>
+                           <td>350</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка паркетной доски (диагональ +20%)</td>
+                           <td>м2</td>
+                           <td>420</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка паркета штучного (диагональ +20%)</td>
+                           <td>м2</td>
+                           <td>1300</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка массивной доски</td>
+                           <td>м2</td>
+                           <td>1800</td>
+                        </tr>
+                        <tr>
+                           <td>Кладка напольной керамической плитки одного рисунка</td>
+                           <td>м2</td>
+                           <td>850</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка плитки мелкой (10х10, 15х15)</td>
+                           <td>м2</td>
+                           <td>1120</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка плитки мозаики</td>
+                           <td>м2</td>
+                           <td>1700</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка бесшовной плитки</td>
+                           <td>м2</td>
+                           <td>1230</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка мраморной плитки</td>
+                           <td>м2</td>
+                           <td>1490</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка плитки под камень</td>
+                           <td>м2</td>
+                           <td>990</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж керамического плинтуса</td>
+                           <td>м2</td>
+                           <td>290</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка плитки на ступени</td>
+                           <td>м2</td>
+                           <td>1200</td>
+                        </tr>
+                        <tr>
+                           <td>Затирка керамической плитки</td>
+                           <td>м2</td>
+                           <td>100</td>
+                        </tr>
+                        <tr>
+                           <td>Затирка мозаики</td>
+                           <td>м2</td>
+                           <td>210</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж мдф и деревянного плинтуса</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж пластикового плинтуса</td>
+                           <td>м2</td>
+                           <td>110</td>
+                        </tr>
+                        <tr>
+                           <td>Высверливание отверстия под унитаз</td>
+                           <td>м2</td>
+                           <td>450</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж порожка</td>
+                           <td>м2</td>
+                           <td>400</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <button class="accordion">Электрика</button>
+               <div class="panel">
+                  <table class="tableizer-table">
+                     <thead>
+                        <tr class="tableizer-firstrow">
+                           <th>Стоимость демонтажных работ</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td> </td>
+                           <td> </td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Демонтаж проводов</td>
+                           <td>м2</td>
+                           <td>40</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж розетки, выключателя</td>
+                           <td>м2</td>
+                           <td>78</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж люстры, светильника, настенного бра</td>
+                           <td>м2</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж распаечной коробки</td>
+                           <td>м2</td>
+                           <td>178</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж старого электрощитка с существующими автоматами</td>
+                           <td>м2</td>
+                           <td>420</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление стен</td>
+                        </tr>
+                        <tr>
+                           <td> </td>
+                           <td> </td>
+                        </tr>
+                       <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Штробление стены в бетоне до 40 мм</td>
+                           <td>м2</td>
+                           <td>475</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление стены (кирпич, пеноблок и т.д.) шириной до 40 мм</td>
+                           <td>м2</td>
+                           <td>390</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление стены из гипсокартона, гипсолита</td>
+                           <td>м2</td>
+                           <td>245</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление потолка</td>
+                           <td>м2</td>
+                           <td>530</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление ниши под электрощиток</td>
+                           <td>м2</td>
+                           <td>1800</td>
+                        </tr>
+                        <tr>
+                           <td>Высверливание углублений под розетку</td>
+                           <td>м2</td>
+                           <td>255</td>
+                        </tr>
+                        <thead>
+                        	<tr class="tableizer-firstrow">
+                           		<th>Стоимость монтажных работ</th>
+                        	</tr>
+						</thead>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Укладка провода в гофре</td>
+                           <td>м2</td>
+                           <td>70</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка провода в пластиковом коробе</td>
+                           <td>м/п</td>
+                           <td>180</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка кабеля для системы "теплый пол"</td>
+                           <td>          м/п</td>
+                           <td>          350</td>
+                        </tr>
+                        <tr>
+                           <td>Укладка матов для системы "теплый пол"</td>
+                           <td>          шт.</td>
+                           <td>          470</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж УЗО</td>
+                           <td>шт.</td>
+                           <td>350</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж автоматов</td>
+                           <td>шт.</td>
+                           <td>290</td>
+                        </tr>
+                        <tr>
+                           <td>Установка электрощита до 54 модулей</td>
+                           <td>шт.</td>
+                           <td>1960</td>
+                        </tr>
+                        <tr>
+                           <td>Установка электрощита свыше 54 модулей</td>
+                           <td>шт.</td>
+                           <td>2400</td>
+                        </tr>
+                        <tr>
+                           <td>Установка розетки, выключателя, диммера</td>
+                           <td>шт.</td>
+                           <td>270</td>
+                        </tr>
+                        <tr>
+                           <td>Установка скрытой электроточки</td>
+                           <td>шт.</td>
+                           <td>450</td>
+                        </tr>
+                        <tr>
+                           <td>Установка и монтаж распаечной коробки</td>
+                           <td>шт.</td>
+                           <td>480</td>
+                        </tr>
+                        <tr>
+                           <td>Установка системы уравнивания потенциалов</td>
+                           <td>шт.</td>
+                           <td>560</td>
+                        </tr>
+                        <tr>
+                           <td>Установка светильников, настенных бра</td>
+                           <td>шт.</td>
+                           <td>360</td>
+                        </tr>
+                        <tr>
+                           <td>Установка люстры</td>
+                           <td>шт.</td>
+                           <td>350</td>
+                        </tr>
+                        <tr>
+                           <td>Установка точечного светильника</td>
+                           <td>шт.</td>
+                           <td>250</td>
+                        </tr>
+                        <tr>
+                           <td>Установка светодиодной ленты</td>
+                           <td>шт.</td>
+                           <td>350</td>
+                        </tr>
+                        <tr>
+                           <td>Установка светодиодной ленты</td>
+                           <td>шт.</td>
+                           <td>980</td>
+                        </tr>
+                        <tr>
+                           <td>Подключение и установка проточного водонагревателя</td>
+                           <td>шт.</td>
+                           <td>1580</td>
+                        </tr>
+                        <tr>
+                           <td>Подключение и установка вытяжного вентилятора</td>
+                           <td>шт.</td>
+                           <td>1420</td>
+                        </tr>
+                        <tr>
+                           <td>Установка и подключение блока управления протечки воды</td>
+                           <td>шт.</td>
+                           <td>1900</td>
+                        </tr>
+                        <tr>
+                           <td>Установка и подключение датчика подключения воды</td>
+                           <td>шт.</td>
+                           <td>250</td>
+                        </tr>
+                        <tr>
+                           <td>Установка регулятора/датчика теплого пола</td>
+                           <td>шт.</td>
+                           <td>370</td>
+                        </tr>
+                        <tr>
+                           <td>Установка электрического полотенцесушителя</td>
+                           <td>шт.</td>
+                           <td>905</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж электрозвонка</td>
+                           <td>шт.</td>
+                           <td>410</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <button class="accordion">Сантехника</button>
+               <div class="panel">
+                  <table class="tableizer-table">
+                     <thead>
+                        <tr class="tableizer-firstrow">
+                           <th>Стоимость демонтажных работ</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td> </td>
+                           <td> </td>
+                        </tr>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Демонтаж ванны</td>
+                           <td>шт.</td>
+                           <td>600</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж джакузи</td>
+                           <td>шт.</td>
+                           <td>770</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж унитаза</td>
+                           <td>шт.</td>
+                           <td>360</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж полотенцесушителя</td>
+                           <td>шт.</td>
+                           <td>440</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж кухонной мойки</td>
+                           <td>шт.</td>
+                           <td>440</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж водонагревателя</td>
+                           <td>шт.</td>
+                           <td>930</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж водопроводных труб</td>
+                           <td>м/п</td>
+                           <td>230</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж канализационных труб</td>
+                           <td>м/п</td>
+                           <td>250</td>
+                        </tr>
+                        <tr>
+                           <td>Демонтаж радиатора, батареи</td>
+                           <td>шт.</td>
+                           <td>420</td>
+                        </tr>
+                       	<thead>
+                        	<tr class="tableizer-firstrow">
+                           		<th>Стоимость монтажных работ</th>
+                        	</tr>
+						</thead>
+                        <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Монтаж и распайка труб</td>
+                           <td>шт.</td>
+                           <td>4100</td>
+                        </tr>
+                        <tr>
+                           <td>Вывод канализации</td>
+                           <td>шт.</td>
+                           <td>1050</td>
+                        </tr>
+                        <tr>
+                           <td>Установка гребенки</td>
+                           <td>шт.</td>
+                           <td>1890</td>
+                        </tr>
+                        <tr>
+                           <td>Установка регулятора давления воды</td>
+                           <td>шт.</td>
+                           <td>1260</td>
+                        </tr>
+                        <tr>
+                           <td>Установка фильтра воды грубой очистки</td>
+                           <td>шт.</td>
+                           <td>1080</td>
+                        </tr>
+                        <tr>
+                           <td>Установка автоматического фильтра очистки воды</td>
+                           <td>шт.</td>
+                           <td>1190</td>
+                        </tr>
+                        <tr>
+                           <td>Установка фильтра тонкой очистки с промывкой</td>
+                           <td>шт.</td>
+                           <td>1550</td>
+                        </tr>
+                        <tr>
+                           <td>Установка редуктора</td>
+                           <td>шт.</td>
+                           <td>890</td>
+                        </tr>
+                        <tr>
+                           <td>Установка циркуляционного насоса</td>
+                           <td>шт.</td>
+                           <td>1200</td>
+                        </tr>
+                        <tr>
+                           <td>Установка ревизионного люка</td>
+                           <td>шт.</td>
+                           <td>от 1900</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление стен под трубы (кирпич, пеноблок, гипсолит)</td>
+                           <td>шт.</td>
+                           <td>700</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление стенд под трубы (бетон)</td>
+                           <td>м/п</td>
+                           <td>1180</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж унитаза напольного</td>
+                           <td>м/п</td>
+                           <td>1530</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж унитаза навесного</td>
+                           <td>шт.</td>
+                           <td>3180</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж биде</td>
+                           <td>шт.</td>
+                           <td>1530</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж писсуара</td>
+                           <td>шт.</td>
+                           <td>1180</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж ванной (простой)</td>
+                           <td>шт.</td>
+                           <td>1530</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж ванной с гидромассажем</td>
+                           <td>шт.</td>
+                           <td>6280</td>
+                        </tr>
+                        <tr>
+                           <td>Монтаж душевой кабины</td>
+                           <td>шт.</td>
+                           <td>1530</td>
+                        </tr>
+                        <tr>
+                           <td>Установка умывальника</td>
+                           <td>шт.</td>
+                           <td>1180</td>
+                        </tr>
+                        <tr>
+                           <td>Установка полотенцесушителя</td>
+                           <td>шт.</td>
+                           <td>2530</td>
+                        </tr>
+                        <tr>
+                           <td>Установка смесителя</td>
+                           <td>шт.</td>
+                           <td>1180</td>
+                        </tr>
+                        <tr>
+                           <td>Установка и подключение стиральной машины</td>
+                           <td>шт.</td>
+                           <td>1530</td>
+                        </tr>
+                        <tr>
+                           <td>Установка и подключение посудомоечной машины</td>
+                           <td>шт.</td>
+                           <td>1180</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <button class="accordion">Двери</button>
+               <div class="panel">
+                  <table class="tableizer-table">
+                     <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Демонтаж дверей</td>
+                           <td>шт.</td>
+                           <td>240</td>
+                        </tr>
+                        <tr>
+                           <td>Установка межкомнатных дверей</td>
+                           <td>шт.</td>
+                           <td>3500</td>
+                        </tr>
+                        <tr>
+                           <td>Установка дверного добора</td>
+                           <td>м/п</td>
+                           <td>180</td>
+                        </tr>
+                        <tr>
+                           <td>Установка дверного наличника</td>
+                           <td>м/п</td>
+                           <td>160</td>
+                        </tr>
+                        <tr>
+                           <td>Установка раздвижной двери</td>
+                           <td>шт.</td>
+                           <td>5400</td>
+                        </tr>
+                        <tr>
+                           <td>Установка двери типа «гармошка»</td>
+                           <td>шт.</td>
+                           <td>3500</td>
+                        </tr>
+                        <tr>
+                           <td>Установка «фрамуги»</td>
+                           <td>шт.</td>
+                           <td>1900</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <button class="accordion">Установка кондиционеров</button>
+               <div class="panel">
+                  <table class="tableizer-table">
+                     <thead>
+							<tr class="tableizer-firstrow">
+							   <th>Наименование работ</th>
+							   <th>Ед. изм.</th>
+							   <th>Цена, руб.</th>
+							</tr>
+                     	</thead>
+                        <tr>
+                           <td>Монтаж кондиционера (сверление отверстия в стене, </td>
+                        </tr>
+                        <tr>
+                           <td>установка внешнего и внутреннего блока)</td>
+                           <td>шт.</td>
+                           <td>9500</td>
+                        </tr>
+                        <tr>
+                           <td>Штробление стен под трассу</td>
+                           <td>м/п</td>
+                           <td>780</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
             </section>
             <section id="contacts" class="our-contacts clearfix">
-                <h1 class="fadeInDown">Как с нами связаться</h1>
-                <div class="col-xs-12 col-sm-6 col contacts">
-                    <div>Мы работаем без выходных с 9:00 до 22:00</div>
-                    <div>
-                        Чтобы получить бесплатную консультацию эксперта<br />
-                        звоните сейчас +7 (965) 136-79-83
-                    </div>
-                    <div>Или пишите texnomotors@mail.ru</div>
-                </div>
-                <div class="contact-form col-xs-12 col-sm-6 col">
-                    <div class="red-border col-xs-12 col">
-                        <h3>
-                            Вы можете оставить заявку на звонок<br />
-                            и наш эксперт свяжется с вами<br />
-                            в удобное для вас время
-                        </h3>
-                        <form id="contacts-form" autocomplete="off">
-                            <div class="form-group col-xs-12 col">
-                                <div class="col-xs-12 col-lg-6 col fio clearfix">
-                                    <div class="col-xs-12 col clearfix">
-                                        <label>Ф. И. О.</label>
-                                    </div>
-                                    <input id="fio" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
-                                </div>
-                                <div class="col-xs-12 col-lg-6 col phone clearfix">
-                                    <div class="col-xs-12 col clearfix">
-                                        <label>Телефон</label>
-                                    </div>
-                                    <input id="phone" name="phone" type="text" placeholder="* +7 (495) 900 90 90" />
-                                </div>
-                                <div class="col-xs-12 col clearfix">
-                                    <label>Выберите дату и время звонка</label>
-                                </div>
-                                <div class='input-group date' id='datetimepicker'>
-                                    <input type='text' name="date" class="form-control" />
-                                    <span class="input-group-addon">
-                                        <span class="glyphicon glyphicon-calendar"></span>
-                                    </span>
-                                </div>
-                                <div class="col-xs-12 col clearfix">
-                                    <label>Дополнительная информация</label>
-                                </div>
-                                <div>
-                                    <textarea name="additional" rows="5"></textarea>
-                                </div>
-                                <label class="message"></label>
-                                <div class="submit-btn podrobnee-btn col-xs-12 col-sm-6 col-sm-offset-3 col">Отправить</div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+               <h1 class="fadeInDown">Как с нами связаться</h1>
+               <div class="col-xs-12 col-sm-6 col contacts">
+                  <div>Мы работаем без выходных с 9:00 до 22:00</div>
+                  <div>
+                     Чтобы получить бесплатную консультацию эксперта<br />
+                     звоните сейчас +7 (965) 136-79-83
+                  </div>
+                  <div>Или пишите texnomotors@mail.ru</div>
+               </div>
+               <div class="contact-form col-xs-12 col-sm-6 col">
+                  <div class="red-border col-xs-12 col">
+                     <h3>
+                        Вы можете оставить заявку на звонок<br />
+                        и наш эксперт свяжется с вами<br />
+                        в удобное для вас время
+                     </h3>
+                     <form id="contacts-form" autocomplete="off">
+                        <div class="form-group col-xs-12 col">
+                           <div class="col-xs-12 col-lg-6 col fio clearfix">
+                              <div class="col-xs-12 col clearfix">
+                                 <label>Ф. И. О.</label>
+                              </div>
+                              <input id="fio" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
+                           </div>
+                           <div class="col-xs-12 col-lg-6 col phone clearfix">
+                              <div class="col-xs-12 col clearfix">
+                                 <label>Телефон</label>
+                              </div>
+                              <input id="phone" name="phone" type="text" placeholder="* +7 (495) 900 90 90" />
+                           </div>
+                           <div class="col-xs-12 col clearfix">
+                              <label>Выберите дату и время звонка</label>
+                           </div>
+                           <div class='input-group date' id='datetimepicker'>
+                              <input type='text' name="date" class="form-control" />
+                              <span class="input-group-addon">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                              </span>
+                           </div>
+                           <div class="col-xs-12 col clearfix">
+                              <label>Дополнительная информация</label>
+                           </div>
+                           <div>
+                              <textarea name="additional" rows="5"></textarea>
+                           </div>
+                           <label class="message"></label>
+                           <div class="submit-btn podrobnee-btn col-xs-12 col-sm-6 col-sm-offset-3 col">Отправить</div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
             </section>
             <section class="footer clearfix">
-                <footer>
-                    <div class="col-xs-6 col-sm-8 col left-footer">
-                        <div class="footer-phone">+7 (965) 136-79-83</div>
-                        <div class="footer-email"><a href="mailto:texnomotors@mail.ru">texnomotors@mail.ru</a></div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col right-footer">
-                        <div class="footer-socials">
-                            Мы в социальных сетях:
-							<a href="https://new.vk.com/gilevrf" target="_blank" class="vk"></a>
-                            <a href="https://www.youtube.com/channel/UCqVGvBlmMNaN1lNy9wrlfaQ" target="_blank" class="utube"></a>
-                        </div>
-                        <div class="footer-rights">© Все права защищены. 2016 г. <a href="http://www.Гилев.рф">Гилев.рф</a></div>
-                    </div>
-                </footer>
+               <footer>
+                  <div class="col-xs-6 col-sm-8 col left-footer">
+                     <div class="footer-phone">+7 (965) 136-79-83</div>
+                     <div class="footer-email"><a href="mailto:texnomotors@mail.ru">texnomotors@mail.ru</a></div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col right-footer">
+                     <div class="footer-socials">
+                        Мы в социальных сетях:
+                        <a href="https://new.vk.com/gilevrf" target="_blank" class="vk"></a>
+                        <a href="https://www.youtube.com/channel/UCqVGvBlmMNaN1lNy9wrlfaQ" target="_blank" class="utube"></a>
+                     </div>
+                     <div class="footer-rights">© Все права защищены. 2016 г. <a href="http://www.Гилев.рф">Гилев.рф</a></div>
+                  </div>
+               </footer>
             </section>
-        </div>
-    </div>
-
-    <div class="hover-form clearfix">
-        <span class="close glyphicon glyphicon-remove"></span>
-        <h3>Закажите консультацию</h3>
-        <form id="hover-form" autocomplete="off">
+         </div>
+      </div>
+      <div class="hover-form clearfix">
+         <span class="close glyphicon glyphicon-remove"></span>
+         <h3>Закажите консультацию</h3>
+         <form id="hover-form" autocomplete="off">
             <div class="form-group">
-                <div class="fio clearfix">
-                    <div class="clearfix">
-                        <label>Ф. И. О.</label>
-                    </div>
-                    <input id="fio1" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
-                </div>
-                <div class="phone clearfix">
-                    <div class="clearfix">
-                        <label>Телефон</label>
-                    </div>
-                    <input id="phone1" name="phone" type="text" placeholder="* +7 900 900 90 90" />
-                </div>
-                <div class="clearfix">
-                    <label>Выберите дату и время звонка</label>
-                </div>
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' name="date" class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-                <div class="clearfix">
-                    <label>Дополнительная информация</label>
-                </div>
-                <div>
-                    <textarea name="additional" rows="5"></textarea>
-                </div>
-                <label class="message"></label>
-                <div class="submit-btn podrobnee-btn col-xs-12 col-sm-6 col-sm-offset-3 col">Отправить</div>
+               <div class="fio clearfix">
+                  <div class="clearfix">
+                     <label>Ф. И. О.</label>
+                  </div>
+                  <input id="fio1" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
+               </div>
+               <div class="phone clearfix">
+                  <div class="clearfix">
+                     <label>Телефон</label>
+                  </div>
+                  <input id="phone1" name="phone" type="text" placeholder="* +7 900 900 90 90" />
+               </div>
+               <div class="clearfix">
+                  <label>Выберите дату и время звонка</label>
+               </div>
+               <div class='input-group date' id='datetimepicker1'>
+                  <input type='text' name="date" class="form-control" />
+                  <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+               </div>
+               <div class="clearfix">
+                  <label>Дополнительная информация</label>
+               </div>
+               <div>
+                  <textarea name="additional" rows="5"></textarea>
+               </div>
+               <label class="message"></label>
+               <div class="submit-btn podrobnee-btn col-xs-12 col-sm-6 col-sm-offset-3 col">Отправить</div>
             </div>
-        </form>
-    </div>
-    <div class="hover-form-review clearfix">
-        <form id="hover-form-review" autocomplete="off">
+         </form>
+      </div>
+      <div class="hover-form-review clearfix">
+         <form id="hover-form-review" autocomplete="off">
             <span class="close glyphicon glyphicon-remove"></span>
             <h3>Оставьте свой отзыв</h3>
             <div class="form-group">
-                <div class="fio clearfix">
-                    <div class="clearfix">
-                        <label>Ф. И. О.</label>
-                    </div>
-                    <input id="fio2" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
-                </div>
-                <div class="auto clearfix">
-                    <div class="clearfix">
-                        <label>Марка подобранного авто</label>
-                    </div>
-                    <input type="text" id="mark" name="mark" placeholder="Ford Focus 2" />
-                </div>
-                <div class="auto-price clearfix">
-                    <div class="clearfix">
-                        <label>Цена подобронного авто</label>
-                    </div>
-                    <input type="text" id="price" name="price" placeholder="360 000" />
-                </div>
-                <div class="clearfix">
-                    <label>Отзыв</label>
-                </div>
-                <div>
-                    <textarea class="txt-review" id="review" name="review" rows="5"></textarea>
-                </div>
-                <label class="message"></label>
-                <div class="submit-review-btn col-xs-12 col-sm-6 col-sm-offset-3 col">Отправить</div>
+               <div class="fio clearfix">
+                  <div class="clearfix">
+                     <label>Ф. И. О.</label>
+                  </div>
+                  <input id="fio2" name="fio" type="text" placeholder="* Иванов Иван Иванович" />
+               </div>
+               <div class="auto clearfix">
+                  <div class="clearfix">
+                     <label>Марка подобранного авто</label>
+                  </div>
+                  <input type="text" id="mark" name="mark" placeholder="Ford Focus 2" />
+               </div>
+               <div class="auto-price clearfix">
+                  <div class="clearfix">
+                     <label>Цена подобронного авто</label>
+                  </div>
+                  <input type="text" id="price" name="price" placeholder="360 000" />
+               </div>
+               <div class="clearfix">
+                  <label>Отзыв</label>
+               </div>
+               <div>
+                  <textarea class="txt-review" id="review" name="review" rows="5"></textarea>
+               </div>
+               <label class="message"></label>
+               <div class="submit-review-btn col-xs-12 col-sm-6 col-sm-offset-3 col">Отправить</div>
             </div>
-        </form>
-    </div>
-    <a href="#top" class="to-top glyphicon glyphicon-arrow-up hidden-sm"></a>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
-    <script src="js/Helpers.js"></script>
-    <script src="js/moment.js"></script>
-    <script src="js/ru.js"></script>
-    <script src="js/masked_input.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $('#datetimepicker').datetimepicker({
-                locale: 'ru'
-            });
-
-            $('#datetimepicker1').datetimepicker({
-                locale: 'ru'
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $("#contacts-form .submit-btn").click(function () {
-            if ($('#contacts-form #fio').val() != '' && $('#contacts-form #phone').val() != '') {
-                var form_data = $('#contacts-form').serialize();
-                $.ajax({
-                    type: "POST",
-                    url: "/send.php",
-                    data: form_data,
-                    success: function () {
-                        yaCounter38210115.reachGoal('REQUEST_SENDED');
-                        $('#contacts-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-                        $('#contacts-form').find("input[type=text], textarea").val("");
-                    },
-                });
-            }
-            else {
-                $("#contacts-form .message").text('Поля Ф.И.О и Телефон должны быть заполнены').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-            }
-        });
-
-        $("#hover-form .submit-btn").click(function () {
-            if ($('#hover-form #fio1').val() != '' && $('#hover-form #phone1').val() != '') {
-                var form_data = $('#hover-form').serialize();
-                $.ajax({
-                    type: "POST",
-                    url: "/send.php",
-                    data: form_data,
-                    success: function () {
-                        yaCounter38210115.reachGoal('REQUEST_SENDED');
-                        $('#hover-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-                        $('#hover-form').find("input[type=text], textarea").val("");
-                    },
-                });
-            }
-            else {
-                $("#hover-form .message").text('Поля Ф.И.О и Телефон должны быть заполнены').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
-            }
-        });
-    </script>
-	<script>
-					var acc = document.getElementsByClassName("accordion");
-					var i;
-
-					for (i = 0; i < acc.length; i++) {
-						acc[i].onclick = function(){
-							this.classList.toggle("active");
-							this.nextElementSibling.classList.toggle("show");
-					  }
-					}
-	</script>
-</body>
+         </form>
+      </div>
+      <a href="#top" class="to-top glyphicon glyphicon-arrow-up hidden-sm"></a>
+      <script src="js/jquery.min.js"></script>
+      <script src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+      <script src="js/Helpers.js"></script>
+      <script src="js/moment.js"></script>
+      <script src="js/ru.js"></script>
+      <script src="js/masked_input.js"></script>
+      <script src="js/animate.js"></script>
+      <script src="js/bootstrap-datetimepicker.min.js"></script>
+      <script type="text/javascript">
+         $(function () {
+             $('#datetimepicker').datetimepicker({
+                 locale: 'ru'
+             });
+         
+             $('#datetimepicker1').datetimepicker({
+                 locale: 'ru'
+             });
+         });
+      </script>
+      <script type="text/javascript">
+         $("#contacts-form .submit-btn").click(function () {
+             if ($('#contacts-form #fio').val() != '' && $('#contacts-form #phone').val() != '') {
+                 var form_data = $('#contacts-form').serialize();
+                 $.ajax({
+                     type: "POST",
+                     url: "/send.php",
+                     data: form_data,
+                     success: function () {
+                         yaCounter38210115.reachGoal('REQUEST_SENDED');
+                         $('#contacts-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+                         $('#contacts-form').find("input[type=text], textarea").val("");
+                     },
+                 });
+             }
+             else {
+                 $("#contacts-form .message").text('Поля Ф.И.О и Телефон должны быть заполнены').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+             }
+         });
+         
+         $("#hover-form .submit-btn").click(function () {
+             if ($('#hover-form #fio1').val() != '' && $('#hover-form #phone1').val() != '') {
+                 var form_data = $('#hover-form').serialize();
+                 $.ajax({
+                     type: "POST",
+                     url: "/send.php",
+                     data: form_data,
+                     success: function () {
+                         yaCounter38210115.reachGoal('REQUEST_SENDED');
+                         $('#hover-form .message').text('Ваш запрос успешно отправлен').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+                         $('#hover-form').find("input[type=text], textarea").val("");
+                     },
+                 });
+             }
+             else {
+                 $("#hover-form .message").text('Поля Ф.И.О и Телефон должны быть заполнены').animate({ opacity: '1' }, 300).delay(3000).animate({ opacity: '0' }, 300);
+             }
+         });
+      </script>
+      <script>
+         var acc = document.getElementsByClassName("accordion");
+         var i;
+         
+         for (i = 0; i < acc.length; i++) {
+         	acc[i].onclick = function(){
+         		this.classList.toggle("active");
+         		this.nextElementSibling.classList.toggle("show");
+           }
+         }
+      </script>
+   </body>
 </html>
