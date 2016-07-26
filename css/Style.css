@@ -539,7 +539,7 @@ html, body {
 
 .about-us .icons {
     position: relative;
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
     .about-us .icons::before {
@@ -593,7 +593,7 @@ html, body {
                 opacity: .25;
                 width: 171px;
                 left: 0;
-                border-radius: 50%;
+               border-radius: 50%;
                 transition: .3s;
             }
 
@@ -612,8 +612,7 @@ html, body {
     .about-us .icons .icon p {
         font-size: 14px;
     }
-
-.first-circle-icon {
+.first-circle-icon{
     background: url(../img/clock.svg) no-repeat center;
     margin: 0;
 }
@@ -625,7 +624,7 @@ html, body {
 
 .third-circle-icon {
     background: url(../img/money.svg) no-repeat center;
-    margin: 0;
+	margin: 0;
 }
 
 .fourth-circle-icon {
@@ -952,35 +951,14 @@ html, body {
         }
 
         .our-deals .deals .deal.one, .our-deals .deals .deal.one .auto-pic {
-            background: url('../img/mazda6.jpg') no-repeat center;
+            background: url('../img/4.jpg') no-repeat center;
             background-size: cover;
         }
 
         .our-deals .deals .deal.two, .our-deals .deals .deal.two .auto-pic {
-            background: url('../img/peugeot207.jpg') no-repeat center;
+            background: url('../img/5.jpg') no-repeat center;
             background-size: cover;
         }
-
-        .our-deals .deals .deal.three, .our-deals .deals .deal.three .auto-pic {
-            background: url('../img/lancer9.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        .our-deals .deals .deal.four, .our-deals .deals .deal.four .auto-pic {
-            background: url('../img/audia4.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        .our-deals .deals .deal.five, .our-deals .deals .deal.five .auto-pic {
-            background: url('../img/bmw6.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        .our-deals .deals .deal.six, .our-deals .deals .deal.six .auto-pic {
-            background: url('../img/nissanq.jpg') no-repeat center;
-            background-size: cover;
-        }
-
         .our-deals .deals .deal::after {
             content: '';
             position: absolute;
@@ -1565,7 +1543,7 @@ div.panel .disassembly, div.panel .assembly{
         }
 
     .first-circle-icon, .second-circle-icon, .third-circle-icon, .fourth-circle-icon {
-        background-size: cover;
+        background-size: 70%;
     }
 
     .about-us .icons div h4 {
