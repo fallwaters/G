@@ -71,7 +71,7 @@ var memes = true;
         }
     });
     
-    
+    $(document).on('scroll', onScroll);
     $('.burger').click(function () {
         $('.menu-xs ul').toggleClass('opened');
     });
@@ -190,7 +190,7 @@ function onScroll(event){
     $('.left-side-bar .menu a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            if (refElement.position().top - $(window).height()/2  <= scrollPos && refElement.position().top + refElement.height() - $(window).height()/2 > scrollPos) {
                 $('.left-side-bar .menu ul li a').parent().removeClass("active");
                 currLink.parent().addClass("active");
             }
