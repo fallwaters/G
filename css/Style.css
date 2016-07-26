@@ -1111,37 +1111,34 @@ button.accordion.active, button.accordion:hover {
 }
 
 div.panel {
-    padding: 0 18px;
+    border: 1px solid red;
+    padding: 0;
+    width: 100%;
     display: none;
     background-color: white;
 }
 
 div.panel.show {
-    display: block;
+    display: table;
 }
-/*div.panel .name{
+div.panel .name{
 	display: inline-block;
 	vertical-align: middle;
-	width: 50%;
-	border-right: 1px solid black;
 }
 div.panel .measure{
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	width: 20%;
-	border-right: 1px solid black;
 }
 div.panel .cost{
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	width: 28%;
 }
 div.panel .disassembly, div.panel .assembly{
 	text-align: center;
 	padding: 10px;
-}*/
+}
 .our-contacts .contacts {
     border-right: 5px solid #8BC34A;
     margin-top: 90px;
