@@ -1,6 +1,8 @@
 $(document).ready(function () {
     // Плавный скролл к якорям
     $('a[href*=#]').bind("click", function (e) {
+        e.preventDefault();
+        $(document).off('scroll');
         var anchor = $(this);
         
 //        $('html, body').stop().animate({
@@ -13,11 +15,17 @@ $(document).ready(function () {
 //        });
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
-        }, 500);
+        }, 500, function () {$(document).on('scroll', onScroll)});
         e.preventDefault();
     });
-
+var memes = true;
     $('.left-side-bar .menu ul li a').click(function () {
+        if ($(this).parent().hasClass('active')){
+            memes = false;
+        }
+        else {
+            memes = true;
+        }
         $('.left-side-bar .menu ul li a').each(function () {
             $(this).parent().removeClass('active');
         })
@@ -26,6 +34,7 @@ $(document).ready(function () {
     });
 
     $('.left-side-bar .menu ul li').click(function (e) {
+         $(document).off("scroll");
             $('.left-side-bar .menu ul li').each(function () {
                 $(this).removeClass('active');
             })
@@ -33,9 +42,8 @@ $(document).ready(function () {
     //        $('html, body').stop().animate({
     //            scrollTop: $($(this).children('a').attr('href')).offset().top
     //        }, 500);
+        if (memes){
             var offs = $($(this).children('a').attr('href')).offset().top;
-            console.log(offs);
-            console.log($(this).offset().top);
             if (offs > $(this).offset().top) {
               $('html, body').stop().animate({
                   scrollTop: offs + 20
@@ -43,7 +51,7 @@ $(document).ready(function () {
 
               $('html, body').animate({
                   scrollTop: offs
-              }, 200);
+              }, 200, function () {$(document).on('scroll', onScroll)});
             });
             }
             else if (offs < $(this).offset().top) {
@@ -53,16 +61,17 @@ $(document).ready(function () {
 
               $('html, body').animate({
                   scrollTop: offs
-              }, 200);
+              }, 200, function () {$(document).on('scroll', onScroll)});
             });
             }
             else {
                 $('html, body').stop().animate({
                   scrollTop: offs
               }, 500)};
-            e.preventDefault();
+        }
     });
-
+    
+    
     $('.burger').click(function () {
         $('.menu-xs ul').toggleClass('opened');
     });
@@ -174,3 +183,19 @@ $(document).ready(function () {
         }
     });
 });
+
+function onScroll(event){
+    event.preventDefault();
+    var scrollPos = $(document).scrollTop();
+    $('.left-side-bar .menu a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('.left-side-bar .menu ul li a').parent().removeClass("active");
+                currLink.parent().addClass("active");
+            }
+            else{
+                currLink.parent().removeClass("active");
+            }
+        });
+    }
