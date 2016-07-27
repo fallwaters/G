@@ -1111,34 +1111,37 @@ button.accordion.active, button.accordion:hover {
 }
 
 div.panel {
-    border: 1px solid red;
-    padding: 0;
-    width: 100%;
+    padding: 0 18px;
     display: none;
     background-color: white;
 }
 
 div.panel.show {
-    display: table;
+    display: block;
 }
-div.panel .name{
+/*div.panel .name{
 	display: inline-block;
 	vertical-align: middle;
+	width: 50%;
+	border-right: 1px solid black;
 }
 div.panel .measure{
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
+	width: 20%;
+	border-right: 1px solid black;
 }
 div.panel .cost{
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
+	width: 28%;
 }
 div.panel .disassembly, div.panel .assembly{
 	text-align: center;
 	padding: 10px;
-}
+}*/
 .our-contacts .contacts {
     border-right: 5px solid #8BC34A;
     margin-top: 90px;
@@ -1516,7 +1519,7 @@ div.panel .disassembly, div.panel .assembly{
 
     .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
                     color: #FFE066;
-                    font-size: 11px;
+                    font-size: 12px;
                     text-decoration: none;
                 }
         .about-us .icons .second, .about-us .icons .third, .about-us .icons .fourth {
@@ -1600,11 +1603,12 @@ div.panel .disassembly, div.panel .assembly{
 
     .left-side-bar .menu ul li {
         padding: 10px 15px;
+        line-height: 14px;
     }
     
 
     .left-side-bar .menu ul a {
-        font-size: 10px;
+        font-size: 11px;
     }
     
     .left-side-bar .top-logo {
