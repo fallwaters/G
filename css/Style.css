@@ -1092,7 +1092,22 @@ button.accordion {
     font-size: 15px;
     transition: 0.4s;
 }
-
+button.accordion:after{
+	content: "";
+	float: right;
+	margin-top: 6px;
+	border-top: 5px solid transparent;
+	border-left: 10px solid black;
+	border-bottom: 5px solid transparent;
+}
+button.accordion.active:after{
+	content: "";
+	float: right;
+	margin-top: -1px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid black;
+}
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
@@ -1465,7 +1480,7 @@ tr {
 
 @media(min-width: 768px) and (orientation: portrait) {
     .left-side-bar .left-side-contacts {
-        margin-top: 111px;
+        margin-top: 126px;
     }
 	.left-side-bar {
         width: 129px;
@@ -1474,7 +1489,7 @@ tr {
 
 @media(min-width: 768px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 111px;
+        margin-top: 126px;
     }
     .left-side-bar {
         width: 129px;
