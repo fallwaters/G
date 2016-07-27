@@ -743,8 +743,8 @@ html, body {
     }
 
     .car-clipart .car {
-        background: url('../img/car-blank.png') no-repeat center;
-        background-size: cover;
+        background: url('../img/apartments.jpg') no-repeat center;
+        background-size: contain;
         width: 710px;
         height: 410px;
         position: absolute;
@@ -1660,9 +1660,9 @@ div.panel .disassembly, div.panel .assembly{
     }
 
         .car-clipart .car {
-            width: 470px;
-            height: 268px;
-            margin-left: -235px;
+            width: 93%;
+            height: 400px;
+            margin-left: -280px;
             margin-top: -134px;
         }
 
@@ -1896,10 +1896,10 @@ div.panel .disassembly, div.panel .assembly{
     }
 
         .car-clipart .car {
-            width: 550px;
-            height: 320px;
-            margin-left: -275px;
-            margin-top: -160px;
+            width: 93%;
+            height: 500px;
+            margin-left: -360px;
+            margin-top: -240px;
         }
 
             .car-clipart .car div {
@@ -2149,14 +2149,15 @@ div.panel .disassembly, div.panel .assembly{
         }
 
     .car-clipart {
-        height: 800px;
+        height: 900px;
     }
 
         .car-clipart .car {
-            width: 710px;
-            height: 410px;
-            margin-top: -205px;
-            margin-left: -355px;
+			height: 900px;
+			width: 95%;
+			margin-left: -450px;
+			margin-top: -400px;
+            background-size: 80%;
         }
 
             .car-clipart .car div {
