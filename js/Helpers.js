@@ -34,6 +34,7 @@ var memes = true;
     });
 
     $('.left-side-bar .menu ul li').click(function (e) {
+        e.preventDefault();
          $(document).off("scroll");
             $('.left-side-bar .menu ul li').each(function () {
                 $(this).removeClass('active');

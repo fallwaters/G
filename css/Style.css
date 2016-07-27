@@ -539,7 +539,7 @@ html, body {
 
 .about-us .icons {
     position: relative;
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
     .about-us .icons::before {
@@ -567,6 +567,7 @@ html, body {
 
     .about-us .icons div {
         text-align: center;
+        background-size: 70%;
         margin-bottom: 30px;
         cursor: default;
     }
@@ -593,7 +594,7 @@ html, body {
                 opacity: .25;
                 width: 171px;
                 left: 0;
-                border-radius: 50%;
+               border-radius: 50%;
                 transition: .3s;
             }
 
@@ -612,8 +613,7 @@ html, body {
     .about-us .icons .icon p {
         font-size: 14px;
     }
-
-.first-circle-icon {
+.first-circle-icon{
     background: url(../img/clock.svg) no-repeat center;
     margin: 0;
 }
@@ -625,7 +625,7 @@ html, body {
 
 .third-circle-icon {
     background: url(../img/money.svg) no-repeat center;
-    margin: 0;
+	margin: 0;
 }
 
 .fourth-circle-icon {
@@ -645,6 +645,7 @@ html, body {
     }
 
     .our-scheme .icons div {
+        background-size: 100%;
         display: inline-block;
         text-align: center;
         vertical-align: top;
@@ -667,15 +668,21 @@ html, body {
     }
 
     .our-scheme .icons .first .icon {
-        background: url(../img/plan.svg) no-repeat center;
+        background-image: url(../img/plan.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .our-scheme .icons .second .icon {
-        background: url(../img/buying.svg) no-repeat center;
+        background-image: url(../img/buying.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .our-scheme .icons .third .icon {
-        background: url(../img/house.svg) no-repeat center;
+        background-image: url(../img/house.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 .our-scheme .slogan-schema-red {
@@ -744,8 +751,8 @@ html, body {
     }
 
     .car-clipart .car {
-        background: url('../img/car-blank.png') no-repeat center;
-        background-size: cover;
+        background: url('../img/apartments.jpg') no-repeat center;
+        background-size: contain;
         width: 710px;
         height: 410px;
         position: absolute;
@@ -952,35 +959,14 @@ html, body {
         }
 
         .our-deals .deals .deal.one, .our-deals .deals .deal.one .auto-pic {
-            background: url('../img/mazda6.jpg') no-repeat center;
+            background: url('../img/4.jpg') no-repeat center;
             background-size: cover;
         }
 
         .our-deals .deals .deal.two, .our-deals .deals .deal.two .auto-pic {
-            background: url('../img/peugeot207.jpg') no-repeat center;
+            background: url('../img/5.jpg') no-repeat center;
             background-size: cover;
         }
-
-        .our-deals .deals .deal.three, .our-deals .deals .deal.three .auto-pic {
-            background: url('../img/lancer9.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        .our-deals .deals .deal.four, .our-deals .deals .deal.four .auto-pic {
-            background: url('../img/audia4.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        .our-deals .deals .deal.five, .our-deals .deals .deal.five .auto-pic {
-            background: url('../img/bmw6.jpg') no-repeat center;
-            background-size: cover;
-        }
-
-        .our-deals .deals .deal.six, .our-deals .deals .deal.six .auto-pic {
-            background: url('../img/nissanq.jpg') no-repeat center;
-            background-size: cover;
-        }
-
         .our-deals .deals .deal::after {
             content: '';
             position: absolute;
@@ -1118,6 +1104,18 @@ div.panel {
 
 div.panel.show {
     display: block;
+}
+td.prices-names{
+	text-align: left;
+	border: 1px solid red;
+}
+td.measure{
+	text-align: center;
+	border: 1px solid red;
+}
+td.value{
+	text-align: center;
+	border: 1px solid red;
 }
 /*div.panel .name{
 	display: inline-block;
@@ -1553,7 +1551,7 @@ div.panel .disassembly, div.panel .assembly{
         }
 
     .first-circle-icon, .second-circle-icon, .third-circle-icon, .fourth-circle-icon {
-        background-size: cover;
+        background-size: 70%;
     }
 
     .about-us .icons div h4 {
@@ -1670,9 +1668,9 @@ div.panel .disassembly, div.panel .assembly{
     }
 
         .car-clipart .car {
-            width: 470px;
-            height: 268px;
-            margin-left: -235px;
+            width: 93%;
+            height: 400px;
+            margin-left: -280px;
             margin-top: -134px;
         }
 
@@ -1906,10 +1904,10 @@ div.panel .disassembly, div.panel .assembly{
     }
 
         .car-clipart .car {
-            width: 550px;
-            height: 320px;
-            margin-left: -275px;
-            margin-top: -160px;
+            width: 93%;
+            height: 500px;
+            margin-left: -360px;
+            margin-top: -240px;
         }
 
             .car-clipart .car div {
@@ -2159,14 +2157,15 @@ div.panel .disassembly, div.panel .assembly{
         }
 
     .car-clipart {
-        height: 800px;
+        height: 900px;
     }
 
         .car-clipart .car {
-            width: 710px;
-            height: 410px;
-            margin-top: -205px;
-            margin-left: -355px;
+			height: 900px;
+			width: 95%;
+			margin-left: -450px;
+			margin-top: -400px;
+            background-size: 80%;
         }
 
             .car-clipart .car div {
