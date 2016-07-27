@@ -567,6 +567,7 @@ html, body {
 
     .about-us .icons div {
         text-align: center;
+        background-size: 70%;
         margin-bottom: 30px;
         cursor: default;
     }
@@ -644,6 +645,7 @@ html, body {
     }
 
     .our-scheme .icons div {
+        background-size: 100%;
         display: inline-block;
         text-align: center;
         vertical-align: top;
@@ -666,15 +668,21 @@ html, body {
     }
 
     .our-scheme .icons .first .icon {
-        background: url(../img/plan.svg) no-repeat center;
+        background-image: url(../img/plan.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .our-scheme .icons .second .icon {
-        background: url(../img/buying.svg) no-repeat center;
+        background-image: url(../img/buying.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .our-scheme .icons .third .icon {
-        background: url(../img/house.svg) no-repeat center;
+        background-image: url(../img/house.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 .our-scheme .slogan-schema-red {
