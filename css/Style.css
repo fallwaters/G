@@ -1081,7 +1081,7 @@ html, body {
 
 button.accordion {
     background-color: #eee;
-    margin: 2px;
+    margin: 10px;
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -1114,6 +1114,11 @@ button.accordion.active, button.accordion:hover {
 
 table {
     table-layout: fixed;
+    padding-left: 7px;
+}
+
+.textalign {
+    text-align: center;
 }
 
 .grey_tr {
@@ -1131,6 +1136,11 @@ div.panel {
 div.panel.show {
     display: block;
 }
+
+td {
+    overflow: hidden;
+}
+
 td.prices-names{
     margin-left: 10px;
     display: table-cell;
@@ -1152,9 +1162,29 @@ td.value{
     width: 25%;
 }
 
-tr {
-    height: 30px;
+td h3 {
+    font-size: 16px;
+    font-weight: bold;
 }
+
+table.fixed {
+    table-layout:fixed; 
+    word-break: break-all;
+}/*Setting the table width is important!*/
+table.fixed td {
+    height: 30px;
+}/*Hide text outside the cell.*/
+table.fixed td:nth-of-type(1) {
+    padding-left: 10px;
+    width:607px;
+}/*Setting the width of column 1.*/
+table.fixed td:nth-of-type(2) {
+    width:150px;
+}/*Setting the width of column 2.*/
+table.fixed td:nth-of-type(3) {
+    width:185px;
+    padding-right: 10px;
+}/*Setting the width of column 3.*/
 
 .even_tr {
     background-color: #FDE9DA;

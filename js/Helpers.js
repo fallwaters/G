@@ -1,5 +1,10 @@
 $(document).ready(function () {
     // Плавный скролл к якорям
+    $('.accordion').on('click', function (e) {
+        $(this).toggleClass('active');
+        $(this).next().toggleClass('show');
+    });
+    
     $('a[href*=#]').bind("click", function (e) {
         e.preventDefault();
         $(document).off('scroll');
