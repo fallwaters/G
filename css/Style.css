@@ -1081,10 +1081,11 @@ html, body {
 
 button.accordion {
     background-color: #eee;
+    margin: 2px;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 98%;
     border: none;
     text-align: left;
     outline: none;
@@ -1094,6 +1095,16 @@ button.accordion {
 
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
+}
+
+table {
+    table-layout: fixed;
+}
+
+.grey_tr {
+    background-color: #999999;
+    color: white;
+    text-align: center;
 }
 
 div.panel {
@@ -1106,40 +1117,34 @@ div.panel.show {
     display: block;
 }
 td.prices-names{
+    margin-left: 10px;
+    display: table-cell;
+    vertical-align: middle;
 	text-align: left;
-	border: 1px solid red;
+    width: 55%;
 }
 td.measure{
+    height: 30px;
+    display: table-cell;
+    vertical-align: middle;
 	text-align: center;
-	border: 1px solid red;
+    width: 20%;
 }
 td.value{
+    display: table-cell;
+    vertical-align: middle;
 	text-align: center;
-	border: 1px solid red;
+    width: 25%;
 }
-/*div.panel .name{
-	display: inline-block;
-	vertical-align: middle;
-	width: 50%;
-	border-right: 1px solid black;
+
+tr {
+    height: 30px;
 }
-div.panel .measure{
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	width: 20%;
-	border-right: 1px solid black;
+
+.even_tr {
+    background-color: #FDE9DA;
 }
-div.panel .cost{
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	width: 28%;
-}
-div.panel .disassembly, div.panel .assembly{
-	text-align: center;
-	padding: 10px;
-}*/
+
 .our-contacts .contacts {
     border-right: 5px solid #8BC34A;
     margin-top: 90px;
