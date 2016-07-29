@@ -5,24 +5,58 @@ $(document).ready(function () {
         $(this).next().toggleClass('show');
     });
     
+    
+//    $('a[href$="#prices"]').bind('click', function(e)){
+//        e.preventDefault();
+//        $(document).off('scroll');
+//        var anchor = $($(this).attr('href')).offset().top
+//        
+//        $('html, body').stop().animate({
+//        scrollTop: anchor + 20
+//    }, 400, function() {
+//        $('html, body').animate({
+//            scrollTop: anchor
+//            }, 120, function () {$(document).on('scroll', onScroll)});
+//        });
+//    e.preventDefault();
+//    };
+    
     $('a[href*=#]').bind("click", function (e) {
         e.preventDefault();
         $(document).off('scroll');
+        console.log(1);
         var anchor = $(this);
-        
-//        $('html, body').stop().animate({
-//        scrollTop: $(anchor.attr('href')).offset().top + 50
-//    }, 500, function() {
-//        
-//        $('html, body').animate({
-//            scrollTop: $(anchor.attr('href')).offset().top
-//            }, 100);
-//        });
-        $('html, body').stop().animate({
+        console.log($(anchor.attr('href')).offset().top);
+        if ($(anchor.attr('href')).offset().top == 0){
+            $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
-        }, 500, function () {$(document).on('scroll', onScroll)});
+        }, 400, function() {
+                $(document).on('scroll', onScroll);
+            });
+        }
+        else {
+            var t = $(anchor.attr('href')).offset().top;
+            $('html, body').stop().animate({
+            scrollTop: t + 20
+        }, 400, function() {
+                $('html, body').stop().animate({
+                    scrollTop: t
+                }, 120, function(){$(document).on('scroll', onScroll)})
+                
+            });
+        }
+//        $('html, body').stop().animate({
+//            var offs1 = $(anchor.attr('href')).offset().top;
+//            scrollTop: offs1 + 20
+//        }, 400, function () {
+//            
+//            $('html, body').animate({
+//                scrollTop: offs
+//            }, 120, function() {$(document).on('scroll', onScroll)});
+//        });
         e.preventDefault();
     });
+    
 var memes = true;
     $('.left-side-bar .menu ul li a').click(function () {
         if ($(this).parent().hasClass('active')){
@@ -53,27 +87,27 @@ var memes = true;
             if (offs > $(this).offset().top) {
               $('html, body').stop().animate({
                   scrollTop: offs + 20
-              }, 500, function() {
+              }, 400, function() {
 
               $('html, body').animate({
                   scrollTop: offs
-              }, 200, function () {$(document).on('scroll', onScroll)});
+              }, 120, function () {$(document).on('scroll', onScroll)});
             });
             }
             else if (offs < $(this).offset().top) {
                 $('html, body').stop().animate({
                   scrollTop: offs - 20
-              }, 500, function() {
+              }, 400, function() {
 
               $('html, body').animate({
                   scrollTop: offs
-              }, 200, function () {$(document).on('scroll', onScroll)});
+              }, 120, function () {$(document).on('scroll', onScroll)});
             });
             }
             else {
                 $('html, body').stop().animate({
                   scrollTop: offs
-              }, 500)};
+              }, 400)};
         }
     });
     
@@ -196,7 +230,7 @@ function onScroll(event){
     $('.left-side-bar .menu a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
-            if (refElement.position().top - $(window).height()/2  <= scrollPos && refElement.position().top + refElement.height() - $(window).height()/2 > scrollPos) {
+            if (refElement.position().top - $(window).height()/3 <= scrollPos && refElement.position().top + refElement.height() - $(window).height()/3 >= scrollPos) {
                 $('.left-side-bar .menu ul li a').parent().removeClass("active");
                 currLink.parent().addClass("active");
             }

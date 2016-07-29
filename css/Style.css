@@ -232,7 +232,7 @@ html, body {
         display: inline-block;
         position: relative;
         z-index: 101;
-        margin-top: 220px;
+        margin-top: 300px;
         background-color: #70C1B3;
     }
 
@@ -366,7 +366,7 @@ html, body {
     text-align: center;
     position: relative;
     color: #fff;
-    background-color: #4D9078;
+    background-color: rgba(77, 144, 120, 0.8);
 }
 
     .slogan-top-red .slogan {
@@ -2152,15 +2152,15 @@ table.fixed td:nth-of-type(3) {
         }
 
         .about-us .icons .second {
-            margin-left: 63px;
+            margin-left: 43px;
         }
 
         .about-us .icons .third {
-            margin-left: 22px;
+            margin-left: 42px;
         }
 
         .about-us .icons .fourth {
-            margin-left: 63px;
+            margin-left: 43px;
         }
 
         .about-us .icons div h4 {
