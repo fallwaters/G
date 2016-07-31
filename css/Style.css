@@ -14,6 +14,7 @@ input, textarea {
 html, body {
     font-family: 'Open Sans', Helvetica Neue, sans-serif;
     display: table;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -316,29 +317,27 @@ html, body {
     }
 
 .top-line {
-    height: 500px;
-    padding-top: 190px;
     position: relative;
+    overflow: hidden;
     border: 1px solid red;
+    height: 654px;
 }
 
 .bg {
+    border: 1px solid green;
     height: 100%;
     width: 100%;
-    position: relative;
-    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../img/3.jpg);
+    url(../img/1.jpg);
     filter: blur(1px);
   -webkit-filter: blur(1px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
 }
 
 .carousel {
@@ -384,11 +383,8 @@ html, body {
 
 .slogan-top-red {
     text-align: center;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
     position: absolute;
     top: 200px;
-    left: 25px;
     z-index: 2;
     color: #fff;
 }
@@ -410,42 +406,16 @@ html, body {
             padding-bottom: 10px;
         }
 
-.carousel-indicators {
-    bottom: initial;
-    top: 67%;
-}
-
-    .carousel-indicators li {
-        width: 15px;
-        height: 15px;
-        margin: 5px;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        background-color: #285943;
-        opacity: .7;
-    }
-
-    .carousel-indicators .active {
-        width: 15px;
-        height: 15px;
-        margin: 5px;
-    }
-
-.circles li:hover {
-    opacity: 1;
-    background-color: #F06E05;
-}
-
-.circles .active {
-    background-color: #F06E05;
-    opacity: 1;
-}
 
 .top-buttons {
-    position: relative;
-    color: #fff;
+    position: absolute;
     text-align: center;
-    margin: 110px 15px 0 15px;
+    color: #fff;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-top: 350px;
     z-index: 2;
 }
 
@@ -462,7 +432,6 @@ html, body {
     .top-buttons .button-red {
         background-color: #F25F5C;
         margin-right: 15px;
-		margin-left: 15px;
     }
 
         .top-buttons .button-red:hover {
@@ -567,18 +536,6 @@ html, body {
     position: relative;
     margin-top: 60px;
 }
-
-    .about-us .icons::before {
-        content: '';
-        position: absolute;
-        display: none;
-        top: -60%;
-        height: 100%;
-        background: url(../img/branch.png) no-repeat center;
-        width: 100%;
-        left: 0;
-        margin: 0 0 0 -9px;
-    }
 
     .about-us .icons .icon {
         border: 2px solid #18191d;
@@ -1394,9 +1351,13 @@ table.fixed td:nth-of-type(3) {
     }
 
     .top-buttons {
-        margin: 145px 15px 0 15px;
+        margin: 300px 15px 0 15px;
     }
 
+    .slogan-top-red {
+        left: 0;
+        right: 0;
+    }
     .vk, .utube {
         width: 23px;
         height: 23px;
@@ -1599,8 +1560,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .top-buttons {
-        text-align: right;
-        margin-top: 175px;
+        margin-top: 135px;
     }
 
     .socials .utube {
@@ -1700,7 +1660,7 @@ table.fixed td:nth-of-type(3) {
             height: 10px;
             top: 50%;
             left: 90%;
-            background: url(../img/red-divider.png) no-repeat center;
+            background: url(../img/arrow.png) no-repeat center;
         }
 
     .left-side-bar .menu ul li {
@@ -1921,6 +1881,10 @@ table.fixed td:nth-of-type(3) {
     .top-buttons div {
         font-size: 14px;
     }
+    
+    .top-buttons {
+        margin-top: 165px;
+    }
 
     .top-line {
         height: 670px;
@@ -2123,6 +2087,9 @@ table.fixed td:nth-of-type(3) {
     .left-side-bar .menu {
         width: 200px;
     }
+    .top-buttons {
+        margin-top: 165px;
+    }
     
     .left-side-bar .menu ul li:hover a, .left-side-bar .menu ul li.active a {
         font-size: 13px;
@@ -2176,6 +2143,10 @@ table.fixed td:nth-of-type(3) {
         font-size: 16px;
     }
 
+    .top-buttons {
+        margin-top: 180px;
+    }
+    
     .about-us h1, .our-scheme h1, .prices h1, .our-deals h1, .our-contacts h1 {
         font-size: 32px;
     }
