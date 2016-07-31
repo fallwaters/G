@@ -21,6 +21,7 @@ html, body {
     padding: 0;
     margin: 0 auto;
     z-index: 1000;
+	overflow-x:hidden; 
 }
 
 .col {
@@ -46,7 +47,7 @@ html, body {
     right: 10px;
     font-size: 20px;
     color: #fff;
-    background: #8BC34A;
+    background: #F06E05;
     padding: 15px;
     opacity: .3;
     transition: .3s;
@@ -106,7 +107,7 @@ html, body {
         }
 
         .hover-form .form-group input[type=text], .hover-form .form-group textarea, .hover-form-review .form-group input[type=text], .hover-form-review .form-group textarea {
-            border: 1px solid #8BC34A;
+            border: 1px solid #F06E05;
             width: 100%;
             resize: none;
             color: #18191d;
@@ -187,7 +188,7 @@ html, body {
 
             .menu-xs ul li a {
                 text-decoration: none;
-                color: #8BC34A;
+                color: #F06E05;
                 font-size: 10px;
             }
 
@@ -196,7 +197,7 @@ html, body {
             }
 
 .left-side-bar {
-    background-color: #70C1B3;
+    background-color: #2196F3;
     height: 100%;
     width: 200px;
     position: fixed;
@@ -212,7 +213,7 @@ html, body {
 
     .left-side-bar .left-side-top {
 		position: fixed;
-        background-color: #70C1B3;
+        background-color: #2196F3;
         padding: 1px 0 1px 0;
     }
 
@@ -222,9 +223,8 @@ html, body {
         background-size: cover;
         width: 120px;
         height: 120px;
-        background-color: #70C1B3;
-        border: 5px solid white;
-        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         margin: 20px 3px;
     }
 
@@ -233,7 +233,7 @@ html, body {
         position: relative;
         z-index: 101;
         margin-top: 300px;
-        background-color: #70C1B3;
+        background-color: #2196F3;
     }
 
         .left-side-bar .menu ul {
@@ -319,6 +319,26 @@ html, body {
     height: 500px;
     padding-top: 190px;
     position: relative;
+    border: 1px solid red;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/3.jpg);
+    filter: blur(1px);
+  -webkit-filter: blur(1px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
 }
 
 .carousel {
@@ -364,9 +384,13 @@ html, body {
 
 .slogan-top-red {
     text-align: center;
-    position: relative;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    z-index: 2;
     color: #fff;
-    background-color: rgba(77, 144, 120, 0.8);
 }
 
     .slogan-top-red .slogan {
@@ -409,11 +433,11 @@ html, body {
 
 .circles li:hover {
     opacity: 1;
-    background-color: #8BC34A;
+    background-color: #F06E05;
 }
 
 .circles .active {
-    background-color: #8BC34A;
+    background-color: #F06E05;
     opacity: 1;
 }
 
@@ -422,6 +446,7 @@ html, body {
     color: #fff;
     text-align: center;
     margin: 110px 15px 0 15px;
+    z-index: 2;
 }
 
     .top-buttons div {
@@ -437,6 +462,7 @@ html, body {
     .top-buttons .button-red {
         background-color: #F25F5C;
         margin-right: 15px;
+		margin-left: 15px;
     }
 
         .top-buttons .button-red:hover {
@@ -712,7 +738,7 @@ html, body {
         }
 
     .our-scheme .slogan-schema-red .zayavka-slogan-btn {
-        background-color: #8BC34A;
+        background-color: #F06E05;
         border: 2px solid #fff;
         display: inline-block;
         padding: 15px 30px;
@@ -732,21 +758,27 @@ html, body {
         }
 
 .flat-clipart {
-    background-image: #e4f8e2;
+    background-color: #e4f8e2;
     background-size: cover;
     height: 800px;
     width: 100%;
     position: relative;
 }
 
-    .flat-clipart::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
+.flat-description {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    line-height: 30px;
+    width: 200px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(91, 108, 93, 0.9);
+    padding: 10px;
+    color: white;
+    transition: .3s;
+    
+}
 
 
 .flat-content {
@@ -760,29 +792,34 @@ html, body {
 
 .flat-category {
     position: relative;
-    border: 1px solid red;
     margin: 0 auto;
-    text-align: center;
+    width: 1000px;
+    height: 50px;
     top: 50px;
+    margin-left: 300px;
 }
 
-/*
 .flat-category ul li {
-    display: inline;
-    margin-left: 50px;
-    margin-right; 50px;
-    font-size: 15px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+}
+#first {
+    margin-left: 0px;
 }
 
-.flat-category ul li:hover {
+.flat-category ul li:hover a, .flat-category ul li.active1 a {
+    text-decoration: none;
     font-size: 16px;
     color: red;
+    transition: .3s;
 }
-*/
 
-.link {
-    z-index: 9999;
-}
 
 .flat-img {
     position: absolute;
@@ -790,163 +827,93 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
+    
 }
 
 .flat-electricity {
     position: absolute;
+    opacity: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
 .flat-shkaphi {
     position: absolute;
+    opacity: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
 .flat-balkon {
     position: absolute;
+    opacity: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
 .flat-santehnica {
     position: absolute;
+    opacity: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
 
 .flat-pol {
     position: absolute;
+    opacity: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: .3s;
 }
-/*
-    .flat-clipart .car {
-        background: url('../img/apartments.png') no-repeat center;
-        background-size: contain;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        margin-top: -205px;
-        left: 50%;
-        margin-left: -355px;
-    }
 
-        .flat-clipart .car.paint {
-            background: url('../img/electricity.png') no-repeat center;
-			z-index: 2;
-            background-size: cover;
-        }
+.el-desc {
+    opacity: 1;
+    transition: 0.5s;
+}
+.sh-desc {
+    opacity: 0;
+    transition: 0.5s;
+}
+.ba-desc {
+    opacity: 0;
+    transition: 0.5s;
+}
+.sa-desc {
+    opacity: 0;
+    transition: 0.5s;
+}
+.po-desc {
+    opacity: 0;
+    transition: 0.5s;
+}
 
-        .flat-clipart .car.engine {
-            background: url('../img/shkaphi.png') no-repeat center;
-            background-size: cover;
-        }
-
-        .flat-clipart .car.rzha {
-            background: url('../img/balkon.png') no-repeat center;
-            background-size: cover;
-        }
-
-        .flat-clipart .car.transm {
-            background: url('../img/santehnica.png') no-repeat center;
-            background-size: cover;
-        }
-
-        .flat-clipart .car.kuzov {
-            background: url('../img/pol.png') no-repeat center;
-            background-size: cover;
-        }
-
-        .flat-clipart .car div {
-            border: #8BC34A solid 5px;
-            text-transform: uppercase;
-            display: inline-block;
-            width: 160px;
-            height: 160px;
-            position: absolute;
-            cursor: pointer;
-        }
-
-            .flat-clipart .car div div {
-                border: none;
-                width: 150px;
-                height: 150px;
-                display: table-cell;
-                position: relative;
-                padding: 2px 5px;
-                font-weight: bold;
-            }
-
-        .flat-clipart .car .paint {
-            top: -17%;
-            left: 18%;
-        }
-
-            .flat-clipart .car .paint div {
-                vertical-align: bottom;
-            }
-
-        .flat-clipart .car .kuzov {
-            top: -15%;
-            left: 49%;
-        }
-
-            .flat-clipart .car .kuzov div {
-                vertical-align: bottom;
-                text-align: right;
-            }
-
-        .flat-clipart .car .engine {
-            top: -26%;
-            right: -2%;
-        }
-
-            .flat-clipart .car .engine div {
-                vertical-align: top;
-                text-align: right;
-            }
-
-        .flat-clipart .car .rzha {
-            bottom: -32%;
-            left: 5%;
-        }
-
-            .flat-clipart .car .rzha div {
-                vertical-align: top;
-            }
-
-        .flat-clipart .car .transm {
-            bottom: -23%;
-            right: 13%;
-        }
-
-            .flat-clipart .car .transm div {
-                vertical-align: bottom;
-            }
-*/
+.active1 {
+    display: block;
+    color: red;
+}
 
 .prices .uslugi {
     margin-top: 75px;
-    border-right: 5px solid #8BC34A;
+    border-right: 5px solid #F06E05;
 }
 
     .prices .uslugi div {
         font-size: 14px;
-        border-left: 5px solid #8BC34A;
+        border-left: 5px solid #F06E05;
         padding-left: 15px;
         margin-bottom: 35px;
     }
@@ -998,20 +965,20 @@ html, body {
 
         .prices .price .descriptions h4 {
             font-weight: bold;
-            color: #8BC34A;
+            color: #F06E05;
             font-size: 14px;
             margin-top: 15px;
         }
 
     .prices .price .red-border {
-        border-left: 5px solid #8BC34A;
+        border-left: 5px solid #F06E05;
         margin-top: 30px;
         padding: 30px 25px 30px 0;
     }
 
     .prices .price .podrobnee-btn, .our-contacts .podrobnee-btn, .hover-form .podrobnee-btn, .review-btn, .submit-review-btn {
         font-size: 24px;
-        border: 2px solid #8BC34A;
+        border: 2px solid #F06E05;
         padding: 20px 10px;
         margin-top: 30px;
         transition: .3s;
@@ -1024,7 +991,7 @@ html, body {
 }
 
     .prices .price .podrobnee-btn:hover, .our-contacts .podrobnee-btn:hover, .hover-form .podrobnee-btn:hover, .review-btn:hover, .submit-review-btn:hover {
-        background-color: #8BC34A;
+        background-color: #F06E05;
         color: #fff;
     }
 
@@ -1104,7 +1071,7 @@ html, body {
                 text-align: center;
                 font-size: 10px;
                 border: 2px solid #fff;
-                background-color: #8BC34A;
+                background-color: #F06E05;
                 background-color: rgba(139, 195, 74, .4);
                 transition: .3s;
                 margin-top: 95px;
@@ -1132,7 +1099,6 @@ html, body {
             background: #fff;
             text-align: left;
             padding: 10px 15px;
-            overflow-y: overlay;
             width: 100%;
             height: 100%;
             top: 0;
@@ -1275,12 +1241,12 @@ table.fixed td:nth-of-type(3) {
 }
 
 .our-contacts .contacts {
-    border-right: 5px solid #8BC34A;
+    border-right: 5px solid #F06E05;
     margin-top: 90px;
 }
 
     .our-contacts .contacts div {
-        border-left: 5px solid #8BC34A;
+        border-left: 5px solid #F06E05;
         padding-left: 15px;
         margin-bottom: 35px;
     }
@@ -1295,7 +1261,7 @@ table.fixed td:nth-of-type(3) {
 }
 
     .our-contacts .contact-form .red-border {
-        border-left: 5px solid #8BC34A;
+        border-left: 5px solid #F06E05;
         padding: 0 25px 0 15px;
     }
 
@@ -1317,7 +1283,7 @@ table.fixed td:nth-of-type(3) {
         }
 
         .our-contacts .contact-form .form-group input[type=text], .our-contacts .contact-form .form-group textarea {
-            border: 1px solid #8BC34A;
+            border: 1px solid #F06E05;
             width: 100%;
             resize: none;
             color: #18191d;
@@ -1351,7 +1317,7 @@ table.fixed td:nth-of-type(3) {
 
         .our-contacts .contact-form .form-group label.message {
             opacity: 0;
-            color: #8BC34A;
+            color: #F06E05;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
@@ -1359,14 +1325,14 @@ table.fixed td:nth-of-type(3) {
 
 .hover-form .form-group label.message, .hover-form-review .form-group label.message {
     opacity: 0;
-    color: #8BC34A;
+    color: #F06E05;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
 
 .input-group.date .input-group-addon {
-    background: #8BC34A;
+    background: #F06E05;
     border: none;
     border-radius: 0;
 }
@@ -1378,7 +1344,7 @@ table.fixed td:nth-of-type(3) {
 .footer {
     background: #fff;
     padding: 15px 15px 30px 15px;
-    border-top: 1px solid #8BC34A;
+    border-top: 1px solid #F06E05;
 }
 
     .footer .left-footer {
@@ -1594,7 +1560,7 @@ table.fixed td:nth-of-type(3) {
 
 @media(min-width: 768px) and (orientation: portrait) {
     .left-side-bar .left-side-contacts {
-        margin-top: 126px;
+        margin-top: 46px;
     }
 	.left-side-bar {
         width: 129px;
@@ -1603,7 +1569,7 @@ table.fixed td:nth-of-type(3) {
 
 @media(min-width: 768px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 126px;
+        margin-top: 46px;
     }
     .left-side-bar {
         width: 129px;
@@ -1612,6 +1578,10 @@ table.fixed td:nth-of-type(3) {
 
 @media(min-width: 768px) {
 
+    .flat-category {
+        margin-left: 20px;
+    }
+    
     .slogan-top-red .slogan {
         padding-top: 45px;
     }
@@ -1797,23 +1767,23 @@ table.fixed td:nth-of-type(3) {
         height: 240px;
     }
 
-    .flat-clipart {
+    .car-clipart {
         height: 500px;
     }
 
-        .flat-clipart .car {
+        .car-clipart .car {
             width: 93%;
             height: 400px;
             margin-left: -280px;
             margin-top: -134px;
         }
 
-            .flat-clipart .car div {
+            .car-clipart .car div {
                 width: 100px;
                 height: 100px;
             }
 
-                .flat-clipart .car div div {
+                .car-clipart .car div div {
                     width: 90px;
                     height: 90px;
                     font-size: 9px;
@@ -1912,13 +1882,13 @@ table.fixed td:nth-of-type(3) {
 
 @media (min-width: 992px) and (orientation: portrait) {
     .left-side-bar .left-side-contacts {
-        margin-top: 97px;
+        margin-top: 40px;
     }
 }
 
 @media (min-width: 992px) and (orientation: landscape) {
     .left-side-bar .left-side-contacts {
-        margin-top: 121px;
+        margin-top: 40px;
     }
 }
 
@@ -1971,6 +1941,10 @@ table.fixed td:nth-of-type(3) {
     
     .left-side-bar .menu ul a:hover {
         font-size: 12px;
+    }
+    
+    .flat-category {
+        margin-left: 120px;
     }
     
 
@@ -2033,23 +2007,23 @@ table.fixed td:nth-of-type(3) {
             font-size: 20px;
         }
 
-    .flat-clipart {
+    .car-clipart {
         height: 570px;
     }
 
-        .flat-clipart .car {
+        .car-clipart .car {
             width: 93%;
             height: 500px;
             margin-left: -360px;
             margin-top: -240px;
         }
 
-            .flat-clipart .car div {
+            .car-clipart .car div {
                 width: 120px;
                 height: 120px;
             }
 
-                .flat-clipart .car div div {
+                .car-clipart .car div div {
                     width: 110px;
                     height: 110px;
                     font-size: 11px;
@@ -2159,7 +2133,7 @@ table.fixed td:nth-of-type(3) {
     }
 
     .left-side-bar .left-side-contacts {
-        margin-top: 130px;
+        margin-top: 49px;
     }
 
         .left-side-bar .left-side-contacts .phone {
@@ -2290,11 +2264,11 @@ table.fixed td:nth-of-type(3) {
             margin-top: 60px;
         }
 
-    .flat-clipart {
+    .car-clipart {
         height: 900px;
     }
 
-        .flat-clipart .car {
+        .car-clipart .car {
 			height: 900px;
 			width: 95%;
 			margin-left: -450px;
@@ -2302,17 +2276,22 @@ table.fixed td:nth-of-type(3) {
             background-size: 80%;
         }
 
-            .flat-clipart .car div {
+            .car-clipart .car div {
                 width: 160px;
                 height: 160px;
             }
 
-                .flat-clipart .car div div {
+                .car-clipart .car div div {
                     width: 150px;
                     height: 150px;
                     font-size: 14px;
                 }
 
+    
+    .flat-category {
+        margin-left: 200px;
+    }
+    
     .prices .uslugi div {
         font-size: 14px;
     }
@@ -2423,10 +2402,13 @@ table.fixed td:nth-of-type(3) {
     .left-side-bar .menu ul li {
         padding: 10px 34px 10px 35px;
     }
+    
 }
 
 @media (min-width: 1600px) {
     .left-side-bar .menu ul li {
         padding: 10px 33px;
     }
+    
+    
 }

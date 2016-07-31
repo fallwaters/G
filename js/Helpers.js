@@ -1,9 +1,22 @@
 $(document).ready(function () {
     // Плавный скролл к якорям
     $('.accordion').on('click', function (e) {
+//    var flag = false;
+//    if ($(this).hasClass('active')){
+//        flag = true;
+//    }
+//    $('.accordion').each(function(){
+//        if (!flag){
+//            $(this).removeClass('active');
+//            $(this).next().removeClass('show');
+//        }
+//    });
         $(this).toggleClass('active');
         $(this).next().toggleClass('show');
+//        flag = false;
     });
+    
+    $('a.link').on('click', linkSwitch);
     
     
     $('a[href$="#top"]').bind('click', function (e){
@@ -17,6 +30,10 @@ $(document).ready(function () {
         });
     e.preventDefault();
     });
+    
+    
+    setInterval(linkSwitchToNext, 2000);
+    
     
     $('.main-part .top-buttons .button-transp').bind("click", function (e) {
         e.preventDefault();
@@ -210,3 +227,89 @@ function onScroll(event){
             }
         });
     }
+
+function linkSwitch(e){
+    e.preventDefault();
+        $('a.link').each(function () {
+            $(this).parent().removeClass('active1');
+            $('.el-desc').css('opacity', '0');
+            $('.sh-desc').css('opacity', '0');
+            $('.ba-desc').css('opacity', '0');
+            $('.sa-desc').css('opacity', '0');
+            $('.po-desc').css('opacity', '0');
+            $('.flat-electricity').css('opacity', '0');
+            $('.flat-shkaphi').css('opacity', '0');
+            $('.flat-balkon').css('opacity', '0');
+            $('.flat-santehnica').css('opacity', '0');
+            $('.flat-pol').css('opacity', '0');
+        })
+
+        $(this).parent().addClass('active1');
+        var zis = $(this).attr('id');
+        if (zis == 'link1'){
+            $('.flat-electricity').css('opacity', '1');
+            $('.el-desc').css('opacity', '1');
+        }
+        else if (zis == 'link2'){
+            $('.flat-shkaphi').css('opacity', '1');
+            $('.sh-desc').css('opacity', '1');
+        }
+        else if (zis == 'link3'){
+            $('.flat-balkon').css('opacity', '1');
+            $('.ba-desc').css('opacity', '1');
+        }
+        else if (zis == 'link4'){
+            $('.flat-santehnica').css('opacity', '1');
+            $('.sa-desc').css('opacity', '1');
+        }
+        else if (zis == 'link5'){
+            $('.flat-pol').css('opacity', '1');
+            $('.po-desc').css('opacity', '1');
+        }
+}
+
+function linkSwitchToNext(){
+    $('a.link').each(function () {
+            $('.el-desc').css('opacity', '0');
+            $('.sh-desc').css('opacity', '0');
+            $('.ba-desc').css('opacity', '0');
+            $('.sa-desc').css('opacity', '0');
+            $('.po-desc').css('opacity', '0');
+            $('.flat-electricity').css('opacity', '0');
+            $('.flat-shkaphi').css('opacity', '0');
+            $('.flat-balkon').css('opacity', '0');
+            $('.flat-santehnica').css('opacity', '0');
+            $('.flat-pol').css('opacity', '0');
+        });
+    
+    if ($('.active1 .link').is('#link1')){
+        $('#link1').parent().removeClass('active1');
+        $('#link2').parent().addClass('active1');
+        $('.flat-shkaphi').css('opacity', '1');
+        $('.sh-desc').css('opacity', '1');
+    }
+    else if ($('.active1 .link').is('#link2')){
+        $('#link2').parent().removeClass('active1');
+        $('#link3').parent().addClass('active1');
+        $('.flat-balkon').css('opacity', '1');
+        $('.ba-desc').css('opacity', '1');
+    }
+    else if ($('.active1 .link').is('#link3')){
+        $('#link3').parent().removeClass('active1');
+        $('#link4').parent().addClass('active1');
+        $('.flat-santehnica').css('opacity', '1');
+        $('.sa-desc').css('opacity', '1');
+    }
+    else if ($('.active1 .link').is('#link4')){
+        $('#link4').parent().removeClass('active1');
+        $('#link5').parent().addClass('active1');
+        $('.flat-pol').css('opacity', '1');
+        $('.po-desc').css('opacity', '1');
+    }
+    else if ($('.active1 .link').is('#link5')){
+        $('#link5').parent().removeClass('active1');
+        $('#link1').parent().addClass('active1');
+        $('.flat-electricity').css('opacity', '1');
+        $('.el-desc').css('opacity', '1');
+    }
+}
