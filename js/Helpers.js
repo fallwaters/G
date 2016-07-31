@@ -6,36 +6,31 @@ $(document).ready(function () {
     });
     
     
-//    $('a[href$="#prices"]').bind('click', function(e)){
-//        e.preventDefault();
-//        $(document).off('scroll');
-//        var anchor = $($(this).attr('href')).offset().top
-//        
-//        $('html, body').stop().animate({
-//        scrollTop: anchor + 20
-//    }, 400, function() {
-//        $('html, body').animate({
-//            scrollTop: anchor
-//            }, 120, function () {$(document).on('scroll', onScroll)});
-//        });
-//    e.preventDefault();
-//    };
-    
-    $('a[href*=#]').bind("click", function (e) {
+    $('a[href$="#top"]').bind('click', function (e){
         e.preventDefault();
         $(document).off('scroll');
-        console.log(1);
-        var anchor = $(this);
-        console.log($(anchor.attr('href')).offset().top);
-        if ($(anchor.attr('href')).offset().top == 0){
+        var anchor2 = $($(this).attr('href')).offset().top;
+        $('html, body').stop().animate({
+        scrollTop: anchor2
+    }, 400, function() {
+            $(document).on('scroll', onScroll);
+        });
+    e.preventDefault();
+    });
+    
+    $('.main-part .top-buttons .button-transp').bind("click", function (e) {
+        e.preventDefault();
+        var m = $($(this).children()[0]);
+        $(document).off('scroll');
+        if ($(m.attr('href')).offset().top == 0){
             $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
+            scrollTop: $(m.attr('href')).offset().top
         }, 400, function() {
                 $(document).on('scroll', onScroll);
             });
         }
         else {
-            var t = $(anchor.attr('href')).offset().top;
+            var t = $(m.attr('href')).offset().top;
             $('html, body').stop().animate({
             scrollTop: t + 20
         }, 400, function() {
@@ -77,7 +72,7 @@ var memes = true;
          $(document).off("scroll");
             $('.left-side-bar .menu ul li').each(function () {
                 $(this).removeClass('active');
-            })
+            });
                 $(this).addClass('active');
     //        $('html, body').stop().animate({
     //            scrollTop: $($(this).children('a').attr('href')).offset().top
@@ -104,10 +99,6 @@ var memes = true;
               }, 120, function () {$(document).on('scroll', onScroll)});
             });
             }
-            else {
-                $('html, body').stop().animate({
-                  scrollTop: offs
-              }, 400)};
         }
     });
     
@@ -175,27 +166,7 @@ var memes = true;
     $('.smoke, .close').click(function () {
         $('.smoke, .hover-form, .our-deals .deals .deal .review, .our-deals .deals .deal .deal-more, .hover-form-review').css('display', 'none');
     });
-
-    $('.car-clipart .car .paint').hover(function () {
-        $('.car-clipart .car').toggleClass('paint');
-    });
-
-    $('.car-clipart .car .kuzov').hover(function () {
-        $('.car-clipart .car').toggleClass('kuzov');
-    });
-
-    $('.car-clipart .car .transm').hover(function () {
-        $('.car-clipart .car').toggleClass('transm');
-    });
-
-    $('.car-clipart .car .rzha').hover(function () {
-        $('.car-clipart .car').toggleClass('rzha');
-    });
-
-    $('.car-clipart .car .engine').hover(function () {
-        $('.car-clipart .car').toggleClass('engine');
-    });
-
+    
     $('#phone, #phone1').mask('+7 (999) 999 99 99');
 
     $('.review-btn').click(function () {

@@ -731,64 +731,147 @@ html, body {
             box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.75);
         }
 
-.car-clipart {
-    background: url('../img/car-back.jpg') no-repeat center;
+.flat-clipart {
+    background-image: #e4f8e2;
     background-size: cover;
     height: 800px;
     width: 100%;
     position: relative;
 }
 
-    .car-clipart::after {
+    .flat-clipart::after {
         content: '';
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #fff;
-        opacity: .8;
     }
 
-    .car-clipart .car {
-        background: url('../img/apartments.jpg') no-repeat center;
+
+.flat-content {
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+    height: 70%;
+    width: 70%;
+}
+
+
+.flat-category {
+    position: relative;
+    border: 1px solid red;
+    margin: 0 auto;
+    text-align: center;
+    top: 50px;
+}
+
+/*
+.flat-category ul li {
+    display: inline;
+    margin-left: 50px;
+    margin-right; 50px;
+    font-size: 15px;
+}
+
+.flat-category ul li:hover {
+    font-size: 16px;
+    color: red;
+}
+*/
+
+.link {
+    z-index: 9999;
+}
+
+.flat-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flat-electricity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flat-shkaphi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flat-balkon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flat-santehnica {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flat-pol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*
+    .flat-clipart .car {
+        background: url('../img/apartments.png') no-repeat center;
         background-size: contain;
-        width: 710px;
-        height: 410px;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        z-index: 100;
+        z-index: 1;
         top: 50%;
         margin-top: -205px;
         left: 50%;
         margin-left: -355px;
     }
 
-        .car-clipart .car.paint {
-            background: url('../img/car-paint.png') no-repeat center;
+        .flat-clipart .car.paint {
+            background: url('../img/electricity.png') no-repeat center;
+			z-index: 2;
             background-size: cover;
         }
 
-        .car-clipart .car.engine {
-            background: url('../img/car-engine.png') no-repeat center;
+        .flat-clipart .car.engine {
+            background: url('../img/shkaphi.png') no-repeat center;
             background-size: cover;
         }
 
-        .car-clipart .car.rzha {
-            background: url('../img/car-rzha.png') no-repeat center;
+        .flat-clipart .car.rzha {
+            background: url('../img/balkon.png') no-repeat center;
             background-size: cover;
         }
 
-        .car-clipart .car.transm {
-            background: url('../img/car-transm.png') no-repeat center;
+        .flat-clipart .car.transm {
+            background: url('../img/santehnica.png') no-repeat center;
             background-size: cover;
         }
 
-        .car-clipart .car.kuzov {
-            background: url('../img/car-kuzov.png') no-repeat center;
+        .flat-clipart .car.kuzov {
+            background: url('../img/pol.png') no-repeat center;
             background-size: cover;
         }
 
-        .car-clipart .car div {
+        .flat-clipart .car div {
             border: #8BC34A solid 5px;
             text-transform: uppercase;
             display: inline-block;
@@ -798,7 +881,7 @@ html, body {
             cursor: pointer;
         }
 
-            .car-clipart .car div div {
+            .flat-clipart .car div div {
                 border: none;
                 width: 150px;
                 height: 150px;
@@ -808,52 +891,53 @@ html, body {
                 font-weight: bold;
             }
 
-        .car-clipart .car .paint {
-            top: -32%;
-            left: -15%;
+        .flat-clipart .car .paint {
+            top: -17%;
+            left: 18%;
         }
 
-            .car-clipart .car .paint div {
+            .flat-clipart .car .paint div {
                 vertical-align: bottom;
             }
 
-        .car-clipart .car .kuzov {
-            top: -20%;
-            left: 19%;
+        .flat-clipart .car .kuzov {
+            top: -15%;
+            left: 49%;
         }
 
-            .car-clipart .car .kuzov div {
+            .flat-clipart .car .kuzov div {
                 vertical-align: bottom;
                 text-align: right;
             }
 
-        .car-clipart .car .engine {
+        .flat-clipart .car .engine {
             top: -26%;
             right: -2%;
         }
 
-            .car-clipart .car .engine div {
+            .flat-clipart .car .engine div {
                 vertical-align: top;
                 text-align: right;
             }
 
-        .car-clipart .car .rzha {
+        .flat-clipart .car .rzha {
             bottom: -32%;
             left: 5%;
         }
 
-            .car-clipart .car .rzha div {
+            .flat-clipart .car .rzha div {
                 vertical-align: top;
             }
 
-        .car-clipart .car .transm {
+        .flat-clipart .car .transm {
             bottom: -23%;
             right: 13%;
         }
 
-            .car-clipart .car .transm div {
+            .flat-clipart .car .transm div {
                 vertical-align: bottom;
             }
+*/
 
 .prices .uslugi {
     margin-top: 75px;
@@ -1713,23 +1797,23 @@ table.fixed td:nth-of-type(3) {
         height: 240px;
     }
 
-    .car-clipart {
+    .flat-clipart {
         height: 500px;
     }
 
-        .car-clipart .car {
+        .flat-clipart .car {
             width: 93%;
             height: 400px;
             margin-left: -280px;
             margin-top: -134px;
         }
 
-            .car-clipart .car div {
+            .flat-clipart .car div {
                 width: 100px;
                 height: 100px;
             }
 
-                .car-clipart .car div div {
+                .flat-clipart .car div div {
                     width: 90px;
                     height: 90px;
                     font-size: 9px;
@@ -1949,23 +2033,23 @@ table.fixed td:nth-of-type(3) {
             font-size: 20px;
         }
 
-    .car-clipart {
+    .flat-clipart {
         height: 570px;
     }
 
-        .car-clipart .car {
+        .flat-clipart .car {
             width: 93%;
             height: 500px;
             margin-left: -360px;
             margin-top: -240px;
         }
 
-            .car-clipart .car div {
+            .flat-clipart .car div {
                 width: 120px;
                 height: 120px;
             }
 
-                .car-clipart .car div div {
+                .flat-clipart .car div div {
                     width: 110px;
                     height: 110px;
                     font-size: 11px;
@@ -2206,11 +2290,11 @@ table.fixed td:nth-of-type(3) {
             margin-top: 60px;
         }
 
-    .car-clipart {
+    .flat-clipart {
         height: 900px;
     }
 
-        .car-clipart .car {
+        .flat-clipart .car {
 			height: 900px;
 			width: 95%;
 			margin-left: -450px;
@@ -2218,12 +2302,12 @@ table.fixed td:nth-of-type(3) {
             background-size: 80%;
         }
 
-            .car-clipart .car div {
+            .flat-clipart .car div {
                 width: 160px;
                 height: 160px;
             }
 
-                .car-clipart .car div div {
+                .flat-clipart .car div div {
                     width: 150px;
                     height: 150px;
                     font-size: 14px;
